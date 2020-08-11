@@ -1,0 +1,30 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/jialeiwang/Desktop/Net/unp/daytimetcpcli.cpp
+unp.h
+/Users/jialeiwang/Desktop/Net/unp/unp.h
+
+/Users/jialeiwang/Desktop/Net/unp/unp.h
+arpa/inet.h
+-
+cstdio
+-
+memory.h
+-
+netinet/in.h
+-
+stdlib.h
+-
+strings.h
+-
+sys/socket.h
+-
+unistd.h
+-
+
