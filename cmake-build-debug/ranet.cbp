@@ -27,11 +27,127 @@
 					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/jialeiwang/Desktop/Net/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="edit_cache">
+			<Target title="tcpservepoll">
+				<Option output="/Users/jialeiwang/Desktop/Net/cmake-build-debug/tcpservepoll" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/Users/jialeiwang/Desktop/Net/cmake-build-debug"/>
-				<Option type="4"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include/c++/v1"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks"/>
+				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/jialeiwang/Desktop/Net/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/jialeiwang/Desktop/Net/cmake-build-debug/Makefile&quot;  VERBOSE=1 tcpservepoll"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/jialeiwang/Desktop/Net/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/jialeiwang/Desktop/Net/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/jialeiwang/Desktop/Net/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="tcpservepoll/fast">
+				<Option output="/Users/jialeiwang/Desktop/Net/cmake-build-debug/tcpservepoll" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/jialeiwang/Desktop/Net/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include/c++/v1"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/jialeiwang/Desktop/Net/cmake-build-debug/Makefile&quot;  VERBOSE=1 tcpservepoll/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/jialeiwang/Desktop/Net/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/jialeiwang/Desktop/Net/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/jialeiwang/Desktop/Net/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="tcpservselect">
+				<Option output="/Users/jialeiwang/Desktop/Net/cmake-build-debug/tcpservselect" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/jialeiwang/Desktop/Net/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include/c++/v1"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/jialeiwang/Desktop/Net/cmake-build-debug/Makefile&quot;  VERBOSE=1 tcpservselect"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/jialeiwang/Desktop/Net/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/jialeiwang/Desktop/Net/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/jialeiwang/Desktop/Net/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="tcpservselect/fast">
+				<Option output="/Users/jialeiwang/Desktop/Net/cmake-build-debug/tcpservselect" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/jialeiwang/Desktop/Net/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include/c++/v1"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/jialeiwang/Desktop/Net/cmake-build-debug/Makefile&quot;  VERBOSE=1 tcpservselect/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/jialeiwang/Desktop/Net/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/jialeiwang/Desktop/Net/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/jialeiwang/Desktop/Net/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="tcpserv01">
+				<Option output="/Users/jialeiwang/Desktop/Net/cmake-build-debug/tcpserv01" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/jialeiwang/Desktop/Net/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include/c++/v1"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/jialeiwang/Desktop/Net/cmake-build-debug/Makefile&quot;  VERBOSE=1 tcpserv01"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/jialeiwang/Desktop/Net/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/jialeiwang/Desktop/Net/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/jialeiwang/Desktop/Net/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="tcpserv01/fast">
+				<Option output="/Users/jialeiwang/Desktop/Net/cmake-build-debug/tcpserv01" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/jialeiwang/Desktop/Net/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include/c++/v1"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/jialeiwang/Desktop/Net/cmake-build-debug/Makefile&quot;  VERBOSE=1 tcpserv01/fast"/>
 					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/jialeiwang/Desktop/Net/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j8 -f &quot;/Users/jialeiwang/Desktop/Net/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/jialeiwang/Desktop/Net/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
@@ -74,6 +190,58 @@
 				</Compiler>
 				<MakeCommands>
 					<Build command="/usr/bin/make -j8 -f &quot;/Users/jialeiwang/Desktop/Net/cmake-build-debug/Makefile&quot;  VERBOSE=1 daytimetcpsrv/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/jialeiwang/Desktop/Net/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/jialeiwang/Desktop/Net/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/jialeiwang/Desktop/Net/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/Users/jialeiwang/Desktop/Net/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/jialeiwang/Desktop/Net/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/jialeiwang/Desktop/Net/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/jialeiwang/Desktop/Net/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/jialeiwang/Desktop/Net/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="tcpcli01">
+				<Option output="/Users/jialeiwang/Desktop/Net/cmake-build-debug/tcpcli01" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/jialeiwang/Desktop/Net/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include/c++/v1"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/jialeiwang/Desktop/Net/cmake-build-debug/Makefile&quot;  VERBOSE=1 tcpcli01"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/jialeiwang/Desktop/Net/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/jialeiwang/Desktop/Net/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/jialeiwang/Desktop/Net/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="tcpcli01/fast">
+				<Option output="/Users/jialeiwang/Desktop/Net/cmake-build-debug/tcpcli01" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/jialeiwang/Desktop/Net/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include/c++/v1"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/jialeiwang/Desktop/Net/cmake-build-debug/Makefile&quot;  VERBOSE=1 tcpcli01/fast"/>
 					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/jialeiwang/Desktop/Net/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j8 -f &quot;/Users/jialeiwang/Desktop/Net/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/jialeiwang/Desktop/Net/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
@@ -167,11 +335,52 @@
 		<Unit filename="/Users/jialeiwang/Desktop/Net/main.cpp">
 			<Option target="ranet"/>
 		</Unit>
+		<Unit filename="/Users/jialeiwang/Desktop/Net/test/tcpservepoll01.cpp">
+			<Option target="tcpservepoll"/>
+		</Unit>
 		<Unit filename="/Users/jialeiwang/Desktop/Net/unp/daytimetcpcli.cpp">
 			<Option target="daytimetcpcli"/>
 		</Unit>
 		<Unit filename="/Users/jialeiwang/Desktop/Net/unp/daytimetcpsrv.cpp">
 			<Option target="daytimetcpsrv"/>
+		</Unit>
+		<Unit filename="/Users/jialeiwang/Desktop/Net/unp/error.cpp">
+			<Option target="tcpservselect"/>
+			<Option target="tcpserv01"/>
+			<Option target="daytimetcpsrv"/>
+			<Option target="tcpcli01"/>
+			<Option target="daytimetcpcli"/>
+		</Unit>
+		<Unit filename="/Users/jialeiwang/Desktop/Net/unp/robustio.cpp">
+			<Option target="tcpservselect"/>
+			<Option target="tcpserv01"/>
+			<Option target="tcpcli01"/>
+		</Unit>
+		<Unit filename="/Users/jialeiwang/Desktop/Net/unp/str_cli.cpp">
+			<Option target="tcpcli01"/>
+		</Unit>
+		<Unit filename="/Users/jialeiwang/Desktop/Net/unp/str_echo.cpp">
+			<Option target="tcpserv01"/>
+		</Unit>
+		<Unit filename="/Users/jialeiwang/Desktop/Net/unp/strcliselect01.cpp">
+			<Option target="tcpcli01"/>
+		</Unit>
+		<Unit filename="/Users/jialeiwang/Desktop/Net/unp/tcpcli01.cpp">
+			<Option target="tcpcli01"/>
+		</Unit>
+		<Unit filename="/Users/jialeiwang/Desktop/Net/unp/tcpserv01.cpp">
+			<Option target="tcpserv01"/>
+		</Unit>
+		<Unit filename="/Users/jialeiwang/Desktop/Net/unp/tcpservselect01.cpp">
+			<Option target="tcpservselect"/>
+		</Unit>
+		<Unit filename="/Users/jialeiwang/Desktop/Net/unp/wrapsock.cpp">
+			<Option target="tcpservselect"/>
+			<Option target="tcpserv01"/>
+			<Option target="tcpcli01"/>
+		</Unit>
+		<Unit filename="/Users/jialeiwang/Desktop/Net/unp/wrapunix.cpp">
+			<Option target="tcpservselect"/>
 		</Unit>
 		<Unit filename="/Users/jialeiwang/Desktop/Net/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>

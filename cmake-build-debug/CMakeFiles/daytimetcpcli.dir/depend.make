@@ -4,3 +4,6 @@
 CMakeFiles/daytimetcpcli.dir/unp/daytimetcpcli.cpp.o: ../unp/daytimetcpcli.cpp
 CMakeFiles/daytimetcpcli.dir/unp/daytimetcpcli.cpp.o: ../unp/unp.h
 
+CMakeFiles/daytimetcpcli.dir/unp/error.cpp.o: ../unp/error.cpp
+CMakeFiles/daytimetcpcli.dir/unp/error.cpp.o: ../unp/unp.h
+

@@ -1,7 +1,3 @@
-//
-// Created by Jialei Wang on 2020/8/11.
-//
-
 // socket->bind->listen->acccept
 
 #include "unp.h"
@@ -26,7 +22,7 @@ int main(int argc, char **argv)
     for(; ;){
         connfd = accept(listenfd, (SA*)NULL, NULL);
         ticks = time(NULL);
-        snprintf(buff, sizeof(buff), "%.24\r\n", ctime(&ticks));
+        snprintf(buff, sizeof(buff), "%.24s\r\n", ctime(&ticks));
         write(connfd, buff, strlen(buff));
         close(connfd);
     }

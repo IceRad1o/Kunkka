@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/daytimetcpcli.dir/unp/daytimetcpcli.cpp.o"
+  "CMakeFiles/daytimetcpcli.dir/unp/error.cpp.o"
   "daytimetcpcli"
   "daytimetcpcli.pdb"
 )

@@ -52,7 +52,11 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
+  "CMakeFiles/tcpservepoll.dir/DependInfo.cmake"
+  "CMakeFiles/tcpservselect.dir/DependInfo.cmake"
+  "CMakeFiles/tcpserv01.dir/DependInfo.cmake"
   "CMakeFiles/daytimetcpsrv.dir/DependInfo.cmake"
+  "CMakeFiles/tcpcli01.dir/DependInfo.cmake"
   "CMakeFiles/daytimetcpcli.dir/DependInfo.cmake"
   "CMakeFiles/ranet.dir/DependInfo.cmake"
   )

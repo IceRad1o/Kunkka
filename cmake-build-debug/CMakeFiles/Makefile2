@@ -53,7 +53,11 @@ CMAKE_BINARY_DIR = /Users/jialeiwang/Desktop/Net/cmake-build-debug
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
+all: CMakeFiles/tcpservepoll.dir/all
+all: CMakeFiles/tcpservselect.dir/all
+all: CMakeFiles/tcpserv01.dir/all
 all: CMakeFiles/daytimetcpsrv.dir/all
+all: CMakeFiles/tcpcli01.dir/all
 all: CMakeFiles/daytimetcpcli.dir/all
 all: CMakeFiles/ranet.dir/all
 
@@ -65,11 +69,96 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
+clean: CMakeFiles/tcpservepoll.dir/clean
+clean: CMakeFiles/tcpservselect.dir/clean
+clean: CMakeFiles/tcpserv01.dir/clean
 clean: CMakeFiles/daytimetcpsrv.dir/clean
+clean: CMakeFiles/tcpcli01.dir/clean
 clean: CMakeFiles/daytimetcpcli.dir/clean
 clean: CMakeFiles/ranet.dir/clean
 
 .PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/tcpservepoll.dir
+
+# All Build rule for target.
+CMakeFiles/tcpservepoll.dir/all:
+	$(MAKE) -f CMakeFiles/tcpservepoll.dir/build.make CMakeFiles/tcpservepoll.dir/depend
+	$(MAKE) -f CMakeFiles/tcpservepoll.dir/build.make CMakeFiles/tcpservepoll.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/jialeiwang/Desktop/Net/cmake-build-debug/CMakeFiles --progress-num=22,23 "Built target tcpservepoll"
+.PHONY : CMakeFiles/tcpservepoll.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/tcpservepoll.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/jialeiwang/Desktop/Net/cmake-build-debug/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/tcpservepoll.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/jialeiwang/Desktop/Net/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/tcpservepoll.dir/rule
+
+# Convenience name for target.
+tcpservepoll: CMakeFiles/tcpservepoll.dir/rule
+
+.PHONY : tcpservepoll
+
+# clean rule for target.
+CMakeFiles/tcpservepoll.dir/clean:
+	$(MAKE) -f CMakeFiles/tcpservepoll.dir/build.make CMakeFiles/tcpservepoll.dir/clean
+.PHONY : CMakeFiles/tcpservepoll.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/tcpservselect.dir
+
+# All Build rule for target.
+CMakeFiles/tcpservselect.dir/all:
+	$(MAKE) -f CMakeFiles/tcpservselect.dir/build.make CMakeFiles/tcpservselect.dir/depend
+	$(MAKE) -f CMakeFiles/tcpservselect.dir/build.make CMakeFiles/tcpservselect.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/jialeiwang/Desktop/Net/cmake-build-debug/CMakeFiles --progress-num=24,25,26,27,28,29 "Built target tcpservselect"
+.PHONY : CMakeFiles/tcpservselect.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/tcpservselect.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/jialeiwang/Desktop/Net/cmake-build-debug/CMakeFiles 6
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/tcpservselect.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/jialeiwang/Desktop/Net/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/tcpservselect.dir/rule
+
+# Convenience name for target.
+tcpservselect: CMakeFiles/tcpservselect.dir/rule
+
+.PHONY : tcpservselect
+
+# clean rule for target.
+CMakeFiles/tcpservselect.dir/clean:
+	$(MAKE) -f CMakeFiles/tcpservselect.dir/build.make CMakeFiles/tcpservselect.dir/clean
+.PHONY : CMakeFiles/tcpservselect.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/tcpserv01.dir
+
+# All Build rule for target.
+CMakeFiles/tcpserv01.dir/all:
+	$(MAKE) -f CMakeFiles/tcpserv01.dir/build.make CMakeFiles/tcpserv01.dir/depend
+	$(MAKE) -f CMakeFiles/tcpserv01.dir/build.make CMakeFiles/tcpserv01.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/jialeiwang/Desktop/Net/cmake-build-debug/CMakeFiles --progress-num=16,17,18,19,20,21 "Built target tcpserv01"
+.PHONY : CMakeFiles/tcpserv01.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/tcpserv01.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/jialeiwang/Desktop/Net/cmake-build-debug/CMakeFiles 6
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/tcpserv01.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/jialeiwang/Desktop/Net/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/tcpserv01.dir/rule
+
+# Convenience name for target.
+tcpserv01: CMakeFiles/tcpserv01.dir/rule
+
+.PHONY : tcpserv01
+
+# clean rule for target.
+CMakeFiles/tcpserv01.dir/clean:
+	$(MAKE) -f CMakeFiles/tcpserv01.dir/build.make CMakeFiles/tcpserv01.dir/clean
+.PHONY : CMakeFiles/tcpserv01.dir/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/daytimetcpsrv.dir
@@ -78,12 +167,12 @@ clean: CMakeFiles/ranet.dir/clean
 CMakeFiles/daytimetcpsrv.dir/all:
 	$(MAKE) -f CMakeFiles/daytimetcpsrv.dir/build.make CMakeFiles/daytimetcpsrv.dir/depend
 	$(MAKE) -f CMakeFiles/daytimetcpsrv.dir/build.make CMakeFiles/daytimetcpsrv.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/jialeiwang/Desktop/Net/cmake-build-debug/CMakeFiles --progress-num=3,4 "Built target daytimetcpsrv"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/jialeiwang/Desktop/Net/cmake-build-debug/CMakeFiles --progress-num=4,5,6 "Built target daytimetcpsrv"
 .PHONY : CMakeFiles/daytimetcpsrv.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/daytimetcpsrv.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/jialeiwang/Desktop/Net/cmake-build-debug/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/jialeiwang/Desktop/Net/cmake-build-debug/CMakeFiles 3
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/daytimetcpsrv.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/jialeiwang/Desktop/Net/cmake-build-debug/CMakeFiles 0
 .PHONY : CMakeFiles/daytimetcpsrv.dir/rule
@@ -99,18 +188,45 @@ CMakeFiles/daytimetcpsrv.dir/clean:
 .PHONY : CMakeFiles/daytimetcpsrv.dir/clean
 
 #=============================================================================
+# Target rules for target CMakeFiles/tcpcli01.dir
+
+# All Build rule for target.
+CMakeFiles/tcpcli01.dir/all:
+	$(MAKE) -f CMakeFiles/tcpcli01.dir/build.make CMakeFiles/tcpcli01.dir/depend
+	$(MAKE) -f CMakeFiles/tcpcli01.dir/build.make CMakeFiles/tcpcli01.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/jialeiwang/Desktop/Net/cmake-build-debug/CMakeFiles --progress-num=9,10,11,12,13,14,15 "Built target tcpcli01"
+.PHONY : CMakeFiles/tcpcli01.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/tcpcli01.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/jialeiwang/Desktop/Net/cmake-build-debug/CMakeFiles 7
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/tcpcli01.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/jialeiwang/Desktop/Net/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/tcpcli01.dir/rule
+
+# Convenience name for target.
+tcpcli01: CMakeFiles/tcpcli01.dir/rule
+
+.PHONY : tcpcli01
+
+# clean rule for target.
+CMakeFiles/tcpcli01.dir/clean:
+	$(MAKE) -f CMakeFiles/tcpcli01.dir/build.make CMakeFiles/tcpcli01.dir/clean
+.PHONY : CMakeFiles/tcpcli01.dir/clean
+
+#=============================================================================
 # Target rules for target CMakeFiles/daytimetcpcli.dir
 
 # All Build rule for target.
 CMakeFiles/daytimetcpcli.dir/all:
 	$(MAKE) -f CMakeFiles/daytimetcpcli.dir/build.make CMakeFiles/daytimetcpcli.dir/depend
 	$(MAKE) -f CMakeFiles/daytimetcpcli.dir/build.make CMakeFiles/daytimetcpcli.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/jialeiwang/Desktop/Net/cmake-build-debug/CMakeFiles --progress-num=1,2 "Built target daytimetcpcli"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/jialeiwang/Desktop/Net/cmake-build-debug/CMakeFiles --progress-num=1,2,3 "Built target daytimetcpcli"
 .PHONY : CMakeFiles/daytimetcpcli.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/daytimetcpcli.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/jialeiwang/Desktop/Net/cmake-build-debug/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/jialeiwang/Desktop/Net/cmake-build-debug/CMakeFiles 3
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/daytimetcpcli.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/jialeiwang/Desktop/Net/cmake-build-debug/CMakeFiles 0
 .PHONY : CMakeFiles/daytimetcpcli.dir/rule
@@ -132,7 +248,7 @@ CMakeFiles/daytimetcpcli.dir/clean:
 CMakeFiles/ranet.dir/all:
 	$(MAKE) -f CMakeFiles/ranet.dir/build.make CMakeFiles/ranet.dir/depend
 	$(MAKE) -f CMakeFiles/ranet.dir/build.make CMakeFiles/ranet.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/jialeiwang/Desktop/Net/cmake-build-debug/CMakeFiles --progress-num=5,6 "Built target ranet"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/jialeiwang/Desktop/Net/cmake-build-debug/CMakeFiles --progress-num=7,8 "Built target ranet"
 .PHONY : CMakeFiles/ranet.dir/all
 
 # Build rule for subdir invocation for target.

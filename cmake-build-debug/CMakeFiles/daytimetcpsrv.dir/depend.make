@@ -4,3 +4,6 @@
 CMakeFiles/daytimetcpsrv.dir/unp/daytimetcpsrv.cpp.o: ../unp/daytimetcpsrv.cpp
 CMakeFiles/daytimetcpsrv.dir/unp/daytimetcpsrv.cpp.o: ../unp/unp.h
 
+CMakeFiles/daytimetcpsrv.dir/unp/error.cpp.o: ../unp/error.cpp
+CMakeFiles/daytimetcpsrv.dir/unp/error.cpp.o: ../unp/unp.h
+

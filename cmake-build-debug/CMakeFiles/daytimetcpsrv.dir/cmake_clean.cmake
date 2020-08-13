@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/daytimetcpsrv.dir/unp/daytimetcpsrv.cpp.o"
+  "CMakeFiles/daytimetcpsrv.dir/unp/error.cpp.o"
   "daytimetcpsrv"
   "daytimetcpsrv.pdb"
 )

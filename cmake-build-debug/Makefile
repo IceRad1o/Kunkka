@@ -111,6 +111,45 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named tcpservepoll
+
+# Build rule for target.
+tcpservepoll: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 tcpservepoll
+.PHONY : tcpservepoll
+
+# fast build rule for target.
+tcpservepoll/fast:
+	$(MAKE) -f CMakeFiles/tcpservepoll.dir/build.make CMakeFiles/tcpservepoll.dir/build
+.PHONY : tcpservepoll/fast
+
+#=============================================================================
+# Target rules for targets named tcpservselect
+
+# Build rule for target.
+tcpservselect: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 tcpservselect
+.PHONY : tcpservselect
+
+# fast build rule for target.
+tcpservselect/fast:
+	$(MAKE) -f CMakeFiles/tcpservselect.dir/build.make CMakeFiles/tcpservselect.dir/build
+.PHONY : tcpservselect/fast
+
+#=============================================================================
+# Target rules for targets named tcpserv01
+
+# Build rule for target.
+tcpserv01: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 tcpserv01
+.PHONY : tcpserv01
+
+# fast build rule for target.
+tcpserv01/fast:
+	$(MAKE) -f CMakeFiles/tcpserv01.dir/build.make CMakeFiles/tcpserv01.dir/build
+.PHONY : tcpserv01/fast
+
+#=============================================================================
 # Target rules for targets named daytimetcpsrv
 
 # Build rule for target.
@@ -122,6 +161,19 @@ daytimetcpsrv: cmake_check_build_system
 daytimetcpsrv/fast:
 	$(MAKE) -f CMakeFiles/daytimetcpsrv.dir/build.make CMakeFiles/daytimetcpsrv.dir/build
 .PHONY : daytimetcpsrv/fast
+
+#=============================================================================
+# Target rules for targets named tcpcli01
+
+# Build rule for target.
+tcpcli01: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 tcpcli01
+.PHONY : tcpcli01
+
+# fast build rule for target.
+tcpcli01/fast:
+	$(MAKE) -f CMakeFiles/tcpcli01.dir/build.make CMakeFiles/tcpcli01.dir/build
+.PHONY : tcpcli01/fast
 
 #=============================================================================
 # Target rules for targets named daytimetcpcli
@@ -175,6 +227,33 @@ main.s: main.cpp.s
 main.cpp.s:
 	$(MAKE) -f CMakeFiles/ranet.dir/build.make CMakeFiles/ranet.dir/main.cpp.s
 .PHONY : main.cpp.s
+
+test/tcpservepoll01.o: test/tcpservepoll01.cpp.o
+
+.PHONY : test/tcpservepoll01.o
+
+# target to build an object file
+test/tcpservepoll01.cpp.o:
+	$(MAKE) -f CMakeFiles/tcpservepoll.dir/build.make CMakeFiles/tcpservepoll.dir/test/tcpservepoll01.cpp.o
+.PHONY : test/tcpservepoll01.cpp.o
+
+test/tcpservepoll01.i: test/tcpservepoll01.cpp.i
+
+.PHONY : test/tcpservepoll01.i
+
+# target to preprocess a source file
+test/tcpservepoll01.cpp.i:
+	$(MAKE) -f CMakeFiles/tcpservepoll.dir/build.make CMakeFiles/tcpservepoll.dir/test/tcpservepoll01.cpp.i
+.PHONY : test/tcpservepoll01.cpp.i
+
+test/tcpservepoll01.s: test/tcpservepoll01.cpp.s
+
+.PHONY : test/tcpservepoll01.s
+
+# target to generate assembly for a file
+test/tcpservepoll01.cpp.s:
+	$(MAKE) -f CMakeFiles/tcpservepoll.dir/build.make CMakeFiles/tcpservepoll.dir/test/tcpservepoll01.cpp.s
+.PHONY : test/tcpservepoll01.cpp.s
 
 unp/daytimetcpcli.o: unp/daytimetcpcli.cpp.o
 
@@ -230,6 +309,300 @@ unp/daytimetcpsrv.cpp.s:
 	$(MAKE) -f CMakeFiles/daytimetcpsrv.dir/build.make CMakeFiles/daytimetcpsrv.dir/unp/daytimetcpsrv.cpp.s
 .PHONY : unp/daytimetcpsrv.cpp.s
 
+unp/error.o: unp/error.cpp.o
+
+.PHONY : unp/error.o
+
+# target to build an object file
+unp/error.cpp.o:
+	$(MAKE) -f CMakeFiles/tcpservselect.dir/build.make CMakeFiles/tcpservselect.dir/unp/error.cpp.o
+	$(MAKE) -f CMakeFiles/tcpserv01.dir/build.make CMakeFiles/tcpserv01.dir/unp/error.cpp.o
+	$(MAKE) -f CMakeFiles/daytimetcpsrv.dir/build.make CMakeFiles/daytimetcpsrv.dir/unp/error.cpp.o
+	$(MAKE) -f CMakeFiles/tcpcli01.dir/build.make CMakeFiles/tcpcli01.dir/unp/error.cpp.o
+	$(MAKE) -f CMakeFiles/daytimetcpcli.dir/build.make CMakeFiles/daytimetcpcli.dir/unp/error.cpp.o
+.PHONY : unp/error.cpp.o
+
+unp/error.i: unp/error.cpp.i
+
+.PHONY : unp/error.i
+
+# target to preprocess a source file
+unp/error.cpp.i:
+	$(MAKE) -f CMakeFiles/tcpservselect.dir/build.make CMakeFiles/tcpservselect.dir/unp/error.cpp.i
+	$(MAKE) -f CMakeFiles/tcpserv01.dir/build.make CMakeFiles/tcpserv01.dir/unp/error.cpp.i
+	$(MAKE) -f CMakeFiles/daytimetcpsrv.dir/build.make CMakeFiles/daytimetcpsrv.dir/unp/error.cpp.i
+	$(MAKE) -f CMakeFiles/tcpcli01.dir/build.make CMakeFiles/tcpcli01.dir/unp/error.cpp.i
+	$(MAKE) -f CMakeFiles/daytimetcpcli.dir/build.make CMakeFiles/daytimetcpcli.dir/unp/error.cpp.i
+.PHONY : unp/error.cpp.i
+
+unp/error.s: unp/error.cpp.s
+
+.PHONY : unp/error.s
+
+# target to generate assembly for a file
+unp/error.cpp.s:
+	$(MAKE) -f CMakeFiles/tcpservselect.dir/build.make CMakeFiles/tcpservselect.dir/unp/error.cpp.s
+	$(MAKE) -f CMakeFiles/tcpserv01.dir/build.make CMakeFiles/tcpserv01.dir/unp/error.cpp.s
+	$(MAKE) -f CMakeFiles/daytimetcpsrv.dir/build.make CMakeFiles/daytimetcpsrv.dir/unp/error.cpp.s
+	$(MAKE) -f CMakeFiles/tcpcli01.dir/build.make CMakeFiles/tcpcli01.dir/unp/error.cpp.s
+	$(MAKE) -f CMakeFiles/daytimetcpcli.dir/build.make CMakeFiles/daytimetcpcli.dir/unp/error.cpp.s
+.PHONY : unp/error.cpp.s
+
+unp/robustio.o: unp/robustio.cpp.o
+
+.PHONY : unp/robustio.o
+
+# target to build an object file
+unp/robustio.cpp.o:
+	$(MAKE) -f CMakeFiles/tcpservselect.dir/build.make CMakeFiles/tcpservselect.dir/unp/robustio.cpp.o
+	$(MAKE) -f CMakeFiles/tcpserv01.dir/build.make CMakeFiles/tcpserv01.dir/unp/robustio.cpp.o
+	$(MAKE) -f CMakeFiles/tcpcli01.dir/build.make CMakeFiles/tcpcli01.dir/unp/robustio.cpp.o
+.PHONY : unp/robustio.cpp.o
+
+unp/robustio.i: unp/robustio.cpp.i
+
+.PHONY : unp/robustio.i
+
+# target to preprocess a source file
+unp/robustio.cpp.i:
+	$(MAKE) -f CMakeFiles/tcpservselect.dir/build.make CMakeFiles/tcpservselect.dir/unp/robustio.cpp.i
+	$(MAKE) -f CMakeFiles/tcpserv01.dir/build.make CMakeFiles/tcpserv01.dir/unp/robustio.cpp.i
+	$(MAKE) -f CMakeFiles/tcpcli01.dir/build.make CMakeFiles/tcpcli01.dir/unp/robustio.cpp.i
+.PHONY : unp/robustio.cpp.i
+
+unp/robustio.s: unp/robustio.cpp.s
+
+.PHONY : unp/robustio.s
+
+# target to generate assembly for a file
+unp/robustio.cpp.s:
+	$(MAKE) -f CMakeFiles/tcpservselect.dir/build.make CMakeFiles/tcpservselect.dir/unp/robustio.cpp.s
+	$(MAKE) -f CMakeFiles/tcpserv01.dir/build.make CMakeFiles/tcpserv01.dir/unp/robustio.cpp.s
+	$(MAKE) -f CMakeFiles/tcpcli01.dir/build.make CMakeFiles/tcpcli01.dir/unp/robustio.cpp.s
+.PHONY : unp/robustio.cpp.s
+
+unp/str_cli.o: unp/str_cli.cpp.o
+
+.PHONY : unp/str_cli.o
+
+# target to build an object file
+unp/str_cli.cpp.o:
+	$(MAKE) -f CMakeFiles/tcpcli01.dir/build.make CMakeFiles/tcpcli01.dir/unp/str_cli.cpp.o
+.PHONY : unp/str_cli.cpp.o
+
+unp/str_cli.i: unp/str_cli.cpp.i
+
+.PHONY : unp/str_cli.i
+
+# target to preprocess a source file
+unp/str_cli.cpp.i:
+	$(MAKE) -f CMakeFiles/tcpcli01.dir/build.make CMakeFiles/tcpcli01.dir/unp/str_cli.cpp.i
+.PHONY : unp/str_cli.cpp.i
+
+unp/str_cli.s: unp/str_cli.cpp.s
+
+.PHONY : unp/str_cli.s
+
+# target to generate assembly for a file
+unp/str_cli.cpp.s:
+	$(MAKE) -f CMakeFiles/tcpcli01.dir/build.make CMakeFiles/tcpcli01.dir/unp/str_cli.cpp.s
+.PHONY : unp/str_cli.cpp.s
+
+unp/str_echo.o: unp/str_echo.cpp.o
+
+.PHONY : unp/str_echo.o
+
+# target to build an object file
+unp/str_echo.cpp.o:
+	$(MAKE) -f CMakeFiles/tcpserv01.dir/build.make CMakeFiles/tcpserv01.dir/unp/str_echo.cpp.o
+.PHONY : unp/str_echo.cpp.o
+
+unp/str_echo.i: unp/str_echo.cpp.i
+
+.PHONY : unp/str_echo.i
+
+# target to preprocess a source file
+unp/str_echo.cpp.i:
+	$(MAKE) -f CMakeFiles/tcpserv01.dir/build.make CMakeFiles/tcpserv01.dir/unp/str_echo.cpp.i
+.PHONY : unp/str_echo.cpp.i
+
+unp/str_echo.s: unp/str_echo.cpp.s
+
+.PHONY : unp/str_echo.s
+
+# target to generate assembly for a file
+unp/str_echo.cpp.s:
+	$(MAKE) -f CMakeFiles/tcpserv01.dir/build.make CMakeFiles/tcpserv01.dir/unp/str_echo.cpp.s
+.PHONY : unp/str_echo.cpp.s
+
+unp/strcliselect01.o: unp/strcliselect01.cpp.o
+
+.PHONY : unp/strcliselect01.o
+
+# target to build an object file
+unp/strcliselect01.cpp.o:
+	$(MAKE) -f CMakeFiles/tcpcli01.dir/build.make CMakeFiles/tcpcli01.dir/unp/strcliselect01.cpp.o
+.PHONY : unp/strcliselect01.cpp.o
+
+unp/strcliselect01.i: unp/strcliselect01.cpp.i
+
+.PHONY : unp/strcliselect01.i
+
+# target to preprocess a source file
+unp/strcliselect01.cpp.i:
+	$(MAKE) -f CMakeFiles/tcpcli01.dir/build.make CMakeFiles/tcpcli01.dir/unp/strcliselect01.cpp.i
+.PHONY : unp/strcliselect01.cpp.i
+
+unp/strcliselect01.s: unp/strcliselect01.cpp.s
+
+.PHONY : unp/strcliselect01.s
+
+# target to generate assembly for a file
+unp/strcliselect01.cpp.s:
+	$(MAKE) -f CMakeFiles/tcpcli01.dir/build.make CMakeFiles/tcpcli01.dir/unp/strcliselect01.cpp.s
+.PHONY : unp/strcliselect01.cpp.s
+
+unp/tcpcli01.o: unp/tcpcli01.cpp.o
+
+.PHONY : unp/tcpcli01.o
+
+# target to build an object file
+unp/tcpcli01.cpp.o:
+	$(MAKE) -f CMakeFiles/tcpcli01.dir/build.make CMakeFiles/tcpcli01.dir/unp/tcpcli01.cpp.o
+.PHONY : unp/tcpcli01.cpp.o
+
+unp/tcpcli01.i: unp/tcpcli01.cpp.i
+
+.PHONY : unp/tcpcli01.i
+
+# target to preprocess a source file
+unp/tcpcli01.cpp.i:
+	$(MAKE) -f CMakeFiles/tcpcli01.dir/build.make CMakeFiles/tcpcli01.dir/unp/tcpcli01.cpp.i
+.PHONY : unp/tcpcli01.cpp.i
+
+unp/tcpcli01.s: unp/tcpcli01.cpp.s
+
+.PHONY : unp/tcpcli01.s
+
+# target to generate assembly for a file
+unp/tcpcli01.cpp.s:
+	$(MAKE) -f CMakeFiles/tcpcli01.dir/build.make CMakeFiles/tcpcli01.dir/unp/tcpcli01.cpp.s
+.PHONY : unp/tcpcli01.cpp.s
+
+unp/tcpserv01.o: unp/tcpserv01.cpp.o
+
+.PHONY : unp/tcpserv01.o
+
+# target to build an object file
+unp/tcpserv01.cpp.o:
+	$(MAKE) -f CMakeFiles/tcpserv01.dir/build.make CMakeFiles/tcpserv01.dir/unp/tcpserv01.cpp.o
+.PHONY : unp/tcpserv01.cpp.o
+
+unp/tcpserv01.i: unp/tcpserv01.cpp.i
+
+.PHONY : unp/tcpserv01.i
+
+# target to preprocess a source file
+unp/tcpserv01.cpp.i:
+	$(MAKE) -f CMakeFiles/tcpserv01.dir/build.make CMakeFiles/tcpserv01.dir/unp/tcpserv01.cpp.i
+.PHONY : unp/tcpserv01.cpp.i
+
+unp/tcpserv01.s: unp/tcpserv01.cpp.s
+
+.PHONY : unp/tcpserv01.s
+
+# target to generate assembly for a file
+unp/tcpserv01.cpp.s:
+	$(MAKE) -f CMakeFiles/tcpserv01.dir/build.make CMakeFiles/tcpserv01.dir/unp/tcpserv01.cpp.s
+.PHONY : unp/tcpserv01.cpp.s
+
+unp/tcpservselect01.o: unp/tcpservselect01.cpp.o
+
+.PHONY : unp/tcpservselect01.o
+
+# target to build an object file
+unp/tcpservselect01.cpp.o:
+	$(MAKE) -f CMakeFiles/tcpservselect.dir/build.make CMakeFiles/tcpservselect.dir/unp/tcpservselect01.cpp.o
+.PHONY : unp/tcpservselect01.cpp.o
+
+unp/tcpservselect01.i: unp/tcpservselect01.cpp.i
+
+.PHONY : unp/tcpservselect01.i
+
+# target to preprocess a source file
+unp/tcpservselect01.cpp.i:
+	$(MAKE) -f CMakeFiles/tcpservselect.dir/build.make CMakeFiles/tcpservselect.dir/unp/tcpservselect01.cpp.i
+.PHONY : unp/tcpservselect01.cpp.i
+
+unp/tcpservselect01.s: unp/tcpservselect01.cpp.s
+
+.PHONY : unp/tcpservselect01.s
+
+# target to generate assembly for a file
+unp/tcpservselect01.cpp.s:
+	$(MAKE) -f CMakeFiles/tcpservselect.dir/build.make CMakeFiles/tcpservselect.dir/unp/tcpservselect01.cpp.s
+.PHONY : unp/tcpservselect01.cpp.s
+
+unp/wrapsock.o: unp/wrapsock.cpp.o
+
+.PHONY : unp/wrapsock.o
+
+# target to build an object file
+unp/wrapsock.cpp.o:
+	$(MAKE) -f CMakeFiles/tcpservselect.dir/build.make CMakeFiles/tcpservselect.dir/unp/wrapsock.cpp.o
+	$(MAKE) -f CMakeFiles/tcpserv01.dir/build.make CMakeFiles/tcpserv01.dir/unp/wrapsock.cpp.o
+	$(MAKE) -f CMakeFiles/tcpcli01.dir/build.make CMakeFiles/tcpcli01.dir/unp/wrapsock.cpp.o
+.PHONY : unp/wrapsock.cpp.o
+
+unp/wrapsock.i: unp/wrapsock.cpp.i
+
+.PHONY : unp/wrapsock.i
+
+# target to preprocess a source file
+unp/wrapsock.cpp.i:
+	$(MAKE) -f CMakeFiles/tcpservselect.dir/build.make CMakeFiles/tcpservselect.dir/unp/wrapsock.cpp.i
+	$(MAKE) -f CMakeFiles/tcpserv01.dir/build.make CMakeFiles/tcpserv01.dir/unp/wrapsock.cpp.i
+	$(MAKE) -f CMakeFiles/tcpcli01.dir/build.make CMakeFiles/tcpcli01.dir/unp/wrapsock.cpp.i
+.PHONY : unp/wrapsock.cpp.i
+
+unp/wrapsock.s: unp/wrapsock.cpp.s
+
+.PHONY : unp/wrapsock.s
+
+# target to generate assembly for a file
+unp/wrapsock.cpp.s:
+	$(MAKE) -f CMakeFiles/tcpservselect.dir/build.make CMakeFiles/tcpservselect.dir/unp/wrapsock.cpp.s
+	$(MAKE) -f CMakeFiles/tcpserv01.dir/build.make CMakeFiles/tcpserv01.dir/unp/wrapsock.cpp.s
+	$(MAKE) -f CMakeFiles/tcpcli01.dir/build.make CMakeFiles/tcpcli01.dir/unp/wrapsock.cpp.s
+.PHONY : unp/wrapsock.cpp.s
+
+unp/wrapunix.o: unp/wrapunix.cpp.o
+
+.PHONY : unp/wrapunix.o
+
+# target to build an object file
+unp/wrapunix.cpp.o:
+	$(MAKE) -f CMakeFiles/tcpservselect.dir/build.make CMakeFiles/tcpservselect.dir/unp/wrapunix.cpp.o
+.PHONY : unp/wrapunix.cpp.o
+
+unp/wrapunix.i: unp/wrapunix.cpp.i
+
+.PHONY : unp/wrapunix.i
+
+# target to preprocess a source file
+unp/wrapunix.cpp.i:
+	$(MAKE) -f CMakeFiles/tcpservselect.dir/build.make CMakeFiles/tcpservselect.dir/unp/wrapunix.cpp.i
+.PHONY : unp/wrapunix.cpp.i
+
+unp/wrapunix.s: unp/wrapunix.cpp.s
+
+.PHONY : unp/wrapunix.s
+
+# target to generate assembly for a file
+unp/wrapunix.cpp.s:
+	$(MAKE) -f CMakeFiles/tcpservselect.dir/build.make CMakeFiles/tcpservselect.dir/unp/wrapunix.cpp.s
+.PHONY : unp/wrapunix.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -237,19 +610,56 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... rebuild_cache"
-	@echo "... edit_cache"
+	@echo "... tcpservepoll"
+	@echo "... tcpservselect"
+	@echo "... tcpserv01"
 	@echo "... daytimetcpsrv"
+	@echo "... edit_cache"
+	@echo "... tcpcli01"
 	@echo "... daytimetcpcli"
 	@echo "... ranet"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... test/tcpservepoll01.o"
+	@echo "... test/tcpservepoll01.i"
+	@echo "... test/tcpservepoll01.s"
 	@echo "... unp/daytimetcpcli.o"
 	@echo "... unp/daytimetcpcli.i"
 	@echo "... unp/daytimetcpcli.s"
 	@echo "... unp/daytimetcpsrv.o"
 	@echo "... unp/daytimetcpsrv.i"
 	@echo "... unp/daytimetcpsrv.s"
+	@echo "... unp/error.o"
+	@echo "... unp/error.i"
+	@echo "... unp/error.s"
+	@echo "... unp/robustio.o"
+	@echo "... unp/robustio.i"
+	@echo "... unp/robustio.s"
+	@echo "... unp/str_cli.o"
+	@echo "... unp/str_cli.i"
+	@echo "... unp/str_cli.s"
+	@echo "... unp/str_echo.o"
+	@echo "... unp/str_echo.i"
+	@echo "... unp/str_echo.s"
+	@echo "... unp/strcliselect01.o"
+	@echo "... unp/strcliselect01.i"
+	@echo "... unp/strcliselect01.s"
+	@echo "... unp/tcpcli01.o"
+	@echo "... unp/tcpcli01.i"
+	@echo "... unp/tcpcli01.s"
+	@echo "... unp/tcpserv01.o"
+	@echo "... unp/tcpserv01.i"
+	@echo "... unp/tcpserv01.s"
+	@echo "... unp/tcpservselect01.o"
+	@echo "... unp/tcpservselect01.i"
+	@echo "... unp/tcpservselect01.s"
+	@echo "... unp/wrapsock.o"
+	@echo "... unp/wrapsock.i"
+	@echo "... unp/wrapsock.s"
+	@echo "... unp/wrapunix.o"
+	@echo "... unp/wrapunix.i"
+	@echo "... unp/wrapunix.s"
 .PHONY : help
 
 
