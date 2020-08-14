@@ -1,6 +1,8 @@
 #include <iostream>
-#include "unp/unp.h"
+#include "test/TcpServer.h"
 
-int main(int argc, char **agrv) {
+int main(int argc, char **argv) {
+    TcpServer tcpserver;
+    tcpserver.start();
     return 0;
 }

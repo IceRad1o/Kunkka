@@ -1,5 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/ranet.dir/main.cpp.o"
+  "CMakeFiles/ranet.dir/test/Channel.cpp.o"
+  "CMakeFiles/ranet.dir/test/TcpServer.cpp.o"
   "ranet"
   "ranet.pdb"
 )

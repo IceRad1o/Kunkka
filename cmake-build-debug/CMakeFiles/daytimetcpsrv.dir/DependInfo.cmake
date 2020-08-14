@@ -4,10 +4,10 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/Users/jialeiwang/Desktop/Net/unp/daytimetcpsrv.cpp" "/Users/jialeiwang/Desktop/Net/cmake-build-debug/CMakeFiles/daytimetcpsrv.dir/unp/daytimetcpsrv.cpp.o"
-  "/Users/jialeiwang/Desktop/Net/unp/error.cpp" "/Users/jialeiwang/Desktop/Net/cmake-build-debug/CMakeFiles/daytimetcpsrv.dir/unp/error.cpp.o"
+  "/home/jialeiwang/Desktop/Net/unp/daytimetcpsrv.cpp" "/home/jialeiwang/Desktop/Net/cmake-build-debug/CMakeFiles/daytimetcpsrv.dir/unp/daytimetcpsrv.cpp.o"
+  "/home/jialeiwang/Desktop/Net/unp/error.cpp" "/home/jialeiwang/Desktop/Net/cmake-build-debug/CMakeFiles/daytimetcpsrv.dir/unp/error.cpp.o"
   )
-set(CMAKE_CXX_COMPILER_ID "AppleClang")
+set(CMAKE_CXX_COMPILER_ID "GNU")
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH

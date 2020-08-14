@@ -6,11 +6,31 @@
 
 #IncludeRegexTransform: 
 
-/Users/jialeiwang/Desktop/Net/unp/strcliselect01.cpp
+/home/jialeiwang/Desktop/Net/unp/error.cpp
 unp.h
-/Users/jialeiwang/Desktop/Net/unp/unp.h
+/home/jialeiwang/Desktop/Net/unp/unp.h
+stdarg.h
+-
+syslog.h
+-
 
-/Users/jialeiwang/Desktop/Net/unp/unp.h
+/home/jialeiwang/Desktop/Net/unp/robustio.cpp
+unp.h
+/home/jialeiwang/Desktop/Net/unp/unp.h
+
+/home/jialeiwang/Desktop/Net/unp/str_cli.cpp
+unp.h
+/home/jialeiwang/Desktop/Net/unp/unp.h
+
+/home/jialeiwang/Desktop/Net/unp/strcliselect01.cpp
+unp.h
+/home/jialeiwang/Desktop/Net/unp/unp.h
+
+/home/jialeiwang/Desktop/Net/unp/tcpcli01.cpp
+unp.h
+/home/jialeiwang/Desktop/Net/unp/unp.h
+
+/home/jialeiwang/Desktop/Net/unp/unp.h
 arpa/inet.h
 -
 cstdio
@@ -33,6 +53,12 @@ sys/select.h
 -
 sys/socket.h
 -
+sys/wait.h
+-
 unistd.h
 -
+
+/home/jialeiwang/Desktop/Net/unp/wrapsock.cpp
+unp.h
+/home/jialeiwang/Desktop/Net/unp/unp.h
 

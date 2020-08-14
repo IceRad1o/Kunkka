@@ -1,9 +1,3 @@
-/Users/jialeiwang/Desktop/Net/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/Users/jialeiwang/Desktop/Net/cmake-build-debug/CMakeFiles/tcpservepoll.dir
-/Users/jialeiwang/Desktop/Net/cmake-build-debug/CMakeFiles/tcpservselect.dir
-/Users/jialeiwang/Desktop/Net/cmake-build-debug/CMakeFiles/tcpserv01.dir
-/Users/jialeiwang/Desktop/Net/cmake-build-debug/CMakeFiles/daytimetcpsrv.dir
-/Users/jialeiwang/Desktop/Net/cmake-build-debug/CMakeFiles/edit_cache.dir
-/Users/jialeiwang/Desktop/Net/cmake-build-debug/CMakeFiles/tcpcli01.dir
-/Users/jialeiwang/Desktop/Net/cmake-build-debug/CMakeFiles/daytimetcpcli.dir
-/Users/jialeiwang/Desktop/Net/cmake-build-debug/CMakeFiles/ranet.dir
+/home/jialeiwang/Desktop/Net/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/jialeiwang/Desktop/Net/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/jialeiwang/Desktop/Net/cmake-build-debug/CMakeFiles/ranet.dir

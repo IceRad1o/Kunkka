@@ -6,11 +6,15 @@
 
 #IncludeRegexTransform: 
 
-/Users/jialeiwang/Desktop/Net/unp/tcpservpoll01.cpp
-unp.h
-/Users/jialeiwang/Desktop/Net/unp/unp.h
+/home/jialeiwang/Desktop/Net/test/tcpservepoll01.cpp
+iostream
+-
+sys/epoll.h
+-
+../unp/unp.h
+/home/jialeiwang/Desktop/Net/unp/unp.h
 
-/Users/jialeiwang/Desktop/Net/unp/unp.h
+/home/jialeiwang/Desktop/Net/unp/unp.h
 arpa/inet.h
 -
 cstdio
@@ -32,6 +36,8 @@ sys/ioctl.h
 sys/select.h
 -
 sys/socket.h
+-
+sys/wait.h
 -
 unistd.h
 -
