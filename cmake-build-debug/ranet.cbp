@@ -332,7 +332,16 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/Users/jialeiwang/Desktop/Net/base/noncopyable.h">
+			<Option target="ranet"/>
+		</Unit>
 		<Unit filename="/Users/jialeiwang/Desktop/Net/main.cpp">
+			<Option target="ranet"/>
+		</Unit>
+		<Unit filename="/Users/jialeiwang/Desktop/Net/net/Eventloop.cpp">
+			<Option target="daytimetcpcli"/>
+		</Unit>
+		<Unit filename="/Users/jialeiwang/Desktop/Net/net/Eventloop.h">
 			<Option target="ranet"/>
 		</Unit>
 		<Unit filename="/Users/jialeiwang/Desktop/Net/test/tcpservepoll01.cpp">

@@ -228,6 +228,33 @@ main.cpp.s:
 	$(MAKE) -f CMakeFiles/ranet.dir/build.make CMakeFiles/ranet.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+net/Eventloop.o: net/Eventloop.cpp.o
+
+.PHONY : net/Eventloop.o
+
+# target to build an object file
+net/Eventloop.cpp.o:
+	$(MAKE) -f CMakeFiles/daytimetcpcli.dir/build.make CMakeFiles/daytimetcpcli.dir/net/Eventloop.cpp.o
+.PHONY : net/Eventloop.cpp.o
+
+net/Eventloop.i: net/Eventloop.cpp.i
+
+.PHONY : net/Eventloop.i
+
+# target to preprocess a source file
+net/Eventloop.cpp.i:
+	$(MAKE) -f CMakeFiles/daytimetcpcli.dir/build.make CMakeFiles/daytimetcpcli.dir/net/Eventloop.cpp.i
+.PHONY : net/Eventloop.cpp.i
+
+net/Eventloop.s: net/Eventloop.cpp.s
+
+.PHONY : net/Eventloop.s
+
+# target to generate assembly for a file
+net/Eventloop.cpp.s:
+	$(MAKE) -f CMakeFiles/daytimetcpcli.dir/build.make CMakeFiles/daytimetcpcli.dir/net/Eventloop.cpp.s
+.PHONY : net/Eventloop.cpp.s
+
 test/tcpservepoll01.o: test/tcpservepoll01.cpp.o
 
 .PHONY : test/tcpservepoll01.o
@@ -621,6 +648,9 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... net/Eventloop.o"
+	@echo "... net/Eventloop.i"
+	@echo "... net/Eventloop.s"
 	@echo "... test/tcpservepoll01.o"
 	@echo "... test/tcpservepoll01.i"
 	@echo "... test/tcpservepoll01.s"

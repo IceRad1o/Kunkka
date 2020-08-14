@@ -18,6 +18,7 @@
 const int MAXLINE = 4096;
 const int LISTENQ = 1024;
 const int SERV_PORT = 9877;
+const int MAX_EVENTS = 500;
 
 template <typename T>
 inline int max(const T&a, const T&b){
