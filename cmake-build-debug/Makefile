@@ -170,59 +170,140 @@ main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ranet.dir/build.make CMakeFiles/ranet.dir/main.cpp.s
 .PHONY : main.cpp.s
 
-test/Channel.o: test/Channel.cpp.o
+mini-muduo/Acceptor.o: mini-muduo/Acceptor.cpp.o
 
-.PHONY : test/Channel.o
-
-# target to build an object file
-test/Channel.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ranet.dir/build.make CMakeFiles/ranet.dir/test/Channel.cpp.o
-.PHONY : test/Channel.cpp.o
-
-test/Channel.i: test/Channel.cpp.i
-
-.PHONY : test/Channel.i
-
-# target to preprocess a source file
-test/Channel.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ranet.dir/build.make CMakeFiles/ranet.dir/test/Channel.cpp.i
-.PHONY : test/Channel.cpp.i
-
-test/Channel.s: test/Channel.cpp.s
-
-.PHONY : test/Channel.s
-
-# target to generate assembly for a file
-test/Channel.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ranet.dir/build.make CMakeFiles/ranet.dir/test/Channel.cpp.s
-.PHONY : test/Channel.cpp.s
-
-test/TcpServer.o: test/TcpServer.cpp.o
-
-.PHONY : test/TcpServer.o
+.PHONY : mini-muduo/Acceptor.o
 
 # target to build an object file
-test/TcpServer.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ranet.dir/build.make CMakeFiles/ranet.dir/test/TcpServer.cpp.o
-.PHONY : test/TcpServer.cpp.o
+mini-muduo/Acceptor.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ranet.dir/build.make CMakeFiles/ranet.dir/mini-muduo/Acceptor.cpp.o
+.PHONY : mini-muduo/Acceptor.cpp.o
 
-test/TcpServer.i: test/TcpServer.cpp.i
+mini-muduo/Acceptor.i: mini-muduo/Acceptor.cpp.i
 
-.PHONY : test/TcpServer.i
+.PHONY : mini-muduo/Acceptor.i
 
 # target to preprocess a source file
-test/TcpServer.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ranet.dir/build.make CMakeFiles/ranet.dir/test/TcpServer.cpp.i
-.PHONY : test/TcpServer.cpp.i
+mini-muduo/Acceptor.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ranet.dir/build.make CMakeFiles/ranet.dir/mini-muduo/Acceptor.cpp.i
+.PHONY : mini-muduo/Acceptor.cpp.i
 
-test/TcpServer.s: test/TcpServer.cpp.s
+mini-muduo/Acceptor.s: mini-muduo/Acceptor.cpp.s
 
-.PHONY : test/TcpServer.s
+.PHONY : mini-muduo/Acceptor.s
 
 # target to generate assembly for a file
-test/TcpServer.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ranet.dir/build.make CMakeFiles/ranet.dir/test/TcpServer.cpp.s
-.PHONY : test/TcpServer.cpp.s
+mini-muduo/Acceptor.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ranet.dir/build.make CMakeFiles/ranet.dir/mini-muduo/Acceptor.cpp.s
+.PHONY : mini-muduo/Acceptor.cpp.s
+
+mini-muduo/Channel.o: mini-muduo/Channel.cpp.o
+
+.PHONY : mini-muduo/Channel.o
+
+# target to build an object file
+mini-muduo/Channel.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ranet.dir/build.make CMakeFiles/ranet.dir/mini-muduo/Channel.cpp.o
+.PHONY : mini-muduo/Channel.cpp.o
+
+mini-muduo/Channel.i: mini-muduo/Channel.cpp.i
+
+.PHONY : mini-muduo/Channel.i
+
+# target to preprocess a source file
+mini-muduo/Channel.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ranet.dir/build.make CMakeFiles/ranet.dir/mini-muduo/Channel.cpp.i
+.PHONY : mini-muduo/Channel.cpp.i
+
+mini-muduo/Channel.s: mini-muduo/Channel.cpp.s
+
+.PHONY : mini-muduo/Channel.s
+
+# target to generate assembly for a file
+mini-muduo/Channel.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ranet.dir/build.make CMakeFiles/ranet.dir/mini-muduo/Channel.cpp.s
+.PHONY : mini-muduo/Channel.cpp.s
+
+mini-muduo/Define.o: mini-muduo/Define.cpp.o
+
+.PHONY : mini-muduo/Define.o
+
+# target to build an object file
+mini-muduo/Define.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ranet.dir/build.make CMakeFiles/ranet.dir/mini-muduo/Define.cpp.o
+.PHONY : mini-muduo/Define.cpp.o
+
+mini-muduo/Define.i: mini-muduo/Define.cpp.i
+
+.PHONY : mini-muduo/Define.i
+
+# target to preprocess a source file
+mini-muduo/Define.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ranet.dir/build.make CMakeFiles/ranet.dir/mini-muduo/Define.cpp.i
+.PHONY : mini-muduo/Define.cpp.i
+
+mini-muduo/Define.s: mini-muduo/Define.cpp.s
+
+.PHONY : mini-muduo/Define.s
+
+# target to generate assembly for a file
+mini-muduo/Define.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ranet.dir/build.make CMakeFiles/ranet.dir/mini-muduo/Define.cpp.s
+.PHONY : mini-muduo/Define.cpp.s
+
+mini-muduo/TcpConnection.o: mini-muduo/TcpConnection.cpp.o
+
+.PHONY : mini-muduo/TcpConnection.o
+
+# target to build an object file
+mini-muduo/TcpConnection.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ranet.dir/build.make CMakeFiles/ranet.dir/mini-muduo/TcpConnection.cpp.o
+.PHONY : mini-muduo/TcpConnection.cpp.o
+
+mini-muduo/TcpConnection.i: mini-muduo/TcpConnection.cpp.i
+
+.PHONY : mini-muduo/TcpConnection.i
+
+# target to preprocess a source file
+mini-muduo/TcpConnection.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ranet.dir/build.make CMakeFiles/ranet.dir/mini-muduo/TcpConnection.cpp.i
+.PHONY : mini-muduo/TcpConnection.cpp.i
+
+mini-muduo/TcpConnection.s: mini-muduo/TcpConnection.cpp.s
+
+.PHONY : mini-muduo/TcpConnection.s
+
+# target to generate assembly for a file
+mini-muduo/TcpConnection.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ranet.dir/build.make CMakeFiles/ranet.dir/mini-muduo/TcpConnection.cpp.s
+.PHONY : mini-muduo/TcpConnection.cpp.s
+
+mini-muduo/TcpServer.o: mini-muduo/TcpServer.cpp.o
+
+.PHONY : mini-muduo/TcpServer.o
+
+# target to build an object file
+mini-muduo/TcpServer.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ranet.dir/build.make CMakeFiles/ranet.dir/mini-muduo/TcpServer.cpp.o
+.PHONY : mini-muduo/TcpServer.cpp.o
+
+mini-muduo/TcpServer.i: mini-muduo/TcpServer.cpp.i
+
+.PHONY : mini-muduo/TcpServer.i
+
+# target to preprocess a source file
+mini-muduo/TcpServer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ranet.dir/build.make CMakeFiles/ranet.dir/mini-muduo/TcpServer.cpp.i
+.PHONY : mini-muduo/TcpServer.cpp.i
+
+mini-muduo/TcpServer.s: mini-muduo/TcpServer.cpp.s
+
+.PHONY : mini-muduo/TcpServer.s
+
+# target to generate assembly for a file
+mini-muduo/TcpServer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ranet.dir/build.make CMakeFiles/ranet.dir/mini-muduo/TcpServer.cpp.s
+.PHONY : mini-muduo/TcpServer.cpp.s
 
 # Help Target
 help:
@@ -236,12 +317,21 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
-	@echo "... test/Channel.o"
-	@echo "... test/Channel.i"
-	@echo "... test/Channel.s"
-	@echo "... test/TcpServer.o"
-	@echo "... test/TcpServer.i"
-	@echo "... test/TcpServer.s"
+	@echo "... mini-muduo/Acceptor.o"
+	@echo "... mini-muduo/Acceptor.i"
+	@echo "... mini-muduo/Acceptor.s"
+	@echo "... mini-muduo/Channel.o"
+	@echo "... mini-muduo/Channel.i"
+	@echo "... mini-muduo/Channel.s"
+	@echo "... mini-muduo/Define.o"
+	@echo "... mini-muduo/Define.i"
+	@echo "... mini-muduo/Define.s"
+	@echo "... mini-muduo/TcpConnection.o"
+	@echo "... mini-muduo/TcpConnection.i"
+	@echo "... mini-muduo/TcpConnection.s"
+	@echo "... mini-muduo/TcpServer.o"
+	@echo "... mini-muduo/TcpServer.i"
+	@echo "... mini-muduo/TcpServer.s"
 .PHONY : help
 
 

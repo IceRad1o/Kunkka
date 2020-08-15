@@ -1,8 +1,8 @@
 #include <iostream>
 #include <sys/epoll.h>
-#include "../unp/unp.h"
+#include "unp.h"
 
-/* Version01 just a echo server example using epoll, can test with tcpcli01 echo */
+/* Version01 just a echo server example using epoll, can mini-muduo with tcpcli01 echo */
 
 int setnonblocking(int fd)
 {

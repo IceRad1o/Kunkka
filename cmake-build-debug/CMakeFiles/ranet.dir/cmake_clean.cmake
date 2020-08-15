@@ -1,7 +1,10 @@
 file(REMOVE_RECURSE
   "CMakeFiles/ranet.dir/main.cpp.o"
-  "CMakeFiles/ranet.dir/test/Channel.cpp.o"
-  "CMakeFiles/ranet.dir/test/TcpServer.cpp.o"
+  "CMakeFiles/ranet.dir/mini-muduo/Acceptor.cpp.o"
+  "CMakeFiles/ranet.dir/mini-muduo/Channel.cpp.o"
+  "CMakeFiles/ranet.dir/mini-muduo/Define.cpp.o"
+  "CMakeFiles/ranet.dir/mini-muduo/TcpConnection.cpp.o"
+  "CMakeFiles/ranet.dir/mini-muduo/TcpServer.cpp.o"
   "ranet"
   "ranet.pdb"
 )

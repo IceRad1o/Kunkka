@@ -1,5 +1,5 @@
 #include "unp.h"
-/* JUST test the select function, the program is not right for echo. the question comes at fgets */
+/* JUST mini-muduo the select function, the program is not right for echo. the question comes at fgets */
 void str_cli_select01(FILE *fp, int sockfd)
 {
     int maxfdp1;

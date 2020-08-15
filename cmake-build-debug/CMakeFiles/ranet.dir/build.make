@@ -90,47 +90,92 @@ CMakeFiles/ranet.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ranet.dir/main.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jialeiwang/Desktop/Net/main.cpp -o CMakeFiles/ranet.dir/main.cpp.s
 
-CMakeFiles/ranet.dir/test/TcpServer.cpp.o: CMakeFiles/ranet.dir/flags.make
-CMakeFiles/ranet.dir/test/TcpServer.cpp.o: ../test/TcpServer.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jialeiwang/Desktop/Net/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/ranet.dir/test/TcpServer.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ranet.dir/test/TcpServer.cpp.o -c /home/jialeiwang/Desktop/Net/test/TcpServer.cpp
+CMakeFiles/ranet.dir/mini-muduo/TcpServer.cpp.o: CMakeFiles/ranet.dir/flags.make
+CMakeFiles/ranet.dir/mini-muduo/TcpServer.cpp.o: ../mini-muduo/TcpServer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jialeiwang/Desktop/Net/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/ranet.dir/mini-muduo/TcpServer.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ranet.dir/mini-muduo/TcpServer.cpp.o -c /home/jialeiwang/Desktop/Net/mini-muduo/TcpServer.cpp
 
-CMakeFiles/ranet.dir/test/TcpServer.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ranet.dir/test/TcpServer.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jialeiwang/Desktop/Net/test/TcpServer.cpp > CMakeFiles/ranet.dir/test/TcpServer.cpp.i
+CMakeFiles/ranet.dir/mini-muduo/TcpServer.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ranet.dir/mini-muduo/TcpServer.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jialeiwang/Desktop/Net/mini-muduo/TcpServer.cpp > CMakeFiles/ranet.dir/mini-muduo/TcpServer.cpp.i
 
-CMakeFiles/ranet.dir/test/TcpServer.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ranet.dir/test/TcpServer.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jialeiwang/Desktop/Net/test/TcpServer.cpp -o CMakeFiles/ranet.dir/test/TcpServer.cpp.s
+CMakeFiles/ranet.dir/mini-muduo/TcpServer.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ranet.dir/mini-muduo/TcpServer.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jialeiwang/Desktop/Net/mini-muduo/TcpServer.cpp -o CMakeFiles/ranet.dir/mini-muduo/TcpServer.cpp.s
 
-CMakeFiles/ranet.dir/test/Channel.cpp.o: CMakeFiles/ranet.dir/flags.make
-CMakeFiles/ranet.dir/test/Channel.cpp.o: ../test/Channel.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jialeiwang/Desktop/Net/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/ranet.dir/test/Channel.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ranet.dir/test/Channel.cpp.o -c /home/jialeiwang/Desktop/Net/test/Channel.cpp
+CMakeFiles/ranet.dir/mini-muduo/Channel.cpp.o: CMakeFiles/ranet.dir/flags.make
+CMakeFiles/ranet.dir/mini-muduo/Channel.cpp.o: ../mini-muduo/Channel.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jialeiwang/Desktop/Net/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/ranet.dir/mini-muduo/Channel.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ranet.dir/mini-muduo/Channel.cpp.o -c /home/jialeiwang/Desktop/Net/mini-muduo/Channel.cpp
 
-CMakeFiles/ranet.dir/test/Channel.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ranet.dir/test/Channel.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jialeiwang/Desktop/Net/test/Channel.cpp > CMakeFiles/ranet.dir/test/Channel.cpp.i
+CMakeFiles/ranet.dir/mini-muduo/Channel.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ranet.dir/mini-muduo/Channel.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jialeiwang/Desktop/Net/mini-muduo/Channel.cpp > CMakeFiles/ranet.dir/mini-muduo/Channel.cpp.i
 
-CMakeFiles/ranet.dir/test/Channel.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ranet.dir/test/Channel.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jialeiwang/Desktop/Net/test/Channel.cpp -o CMakeFiles/ranet.dir/test/Channel.cpp.s
+CMakeFiles/ranet.dir/mini-muduo/Channel.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ranet.dir/mini-muduo/Channel.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jialeiwang/Desktop/Net/mini-muduo/Channel.cpp -o CMakeFiles/ranet.dir/mini-muduo/Channel.cpp.s
+
+CMakeFiles/ranet.dir/mini-muduo/Acceptor.cpp.o: CMakeFiles/ranet.dir/flags.make
+CMakeFiles/ranet.dir/mini-muduo/Acceptor.cpp.o: ../mini-muduo/Acceptor.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jialeiwang/Desktop/Net/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/ranet.dir/mini-muduo/Acceptor.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ranet.dir/mini-muduo/Acceptor.cpp.o -c /home/jialeiwang/Desktop/Net/mini-muduo/Acceptor.cpp
+
+CMakeFiles/ranet.dir/mini-muduo/Acceptor.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ranet.dir/mini-muduo/Acceptor.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jialeiwang/Desktop/Net/mini-muduo/Acceptor.cpp > CMakeFiles/ranet.dir/mini-muduo/Acceptor.cpp.i
+
+CMakeFiles/ranet.dir/mini-muduo/Acceptor.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ranet.dir/mini-muduo/Acceptor.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jialeiwang/Desktop/Net/mini-muduo/Acceptor.cpp -o CMakeFiles/ranet.dir/mini-muduo/Acceptor.cpp.s
+
+CMakeFiles/ranet.dir/mini-muduo/TcpConnection.cpp.o: CMakeFiles/ranet.dir/flags.make
+CMakeFiles/ranet.dir/mini-muduo/TcpConnection.cpp.o: ../mini-muduo/TcpConnection.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jialeiwang/Desktop/Net/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/ranet.dir/mini-muduo/TcpConnection.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ranet.dir/mini-muduo/TcpConnection.cpp.o -c /home/jialeiwang/Desktop/Net/mini-muduo/TcpConnection.cpp
+
+CMakeFiles/ranet.dir/mini-muduo/TcpConnection.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ranet.dir/mini-muduo/TcpConnection.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jialeiwang/Desktop/Net/mini-muduo/TcpConnection.cpp > CMakeFiles/ranet.dir/mini-muduo/TcpConnection.cpp.i
+
+CMakeFiles/ranet.dir/mini-muduo/TcpConnection.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ranet.dir/mini-muduo/TcpConnection.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jialeiwang/Desktop/Net/mini-muduo/TcpConnection.cpp -o CMakeFiles/ranet.dir/mini-muduo/TcpConnection.cpp.s
+
+CMakeFiles/ranet.dir/mini-muduo/Define.cpp.o: CMakeFiles/ranet.dir/flags.make
+CMakeFiles/ranet.dir/mini-muduo/Define.cpp.o: ../mini-muduo/Define.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jialeiwang/Desktop/Net/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/ranet.dir/mini-muduo/Define.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ranet.dir/mini-muduo/Define.cpp.o -c /home/jialeiwang/Desktop/Net/mini-muduo/Define.cpp
+
+CMakeFiles/ranet.dir/mini-muduo/Define.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ranet.dir/mini-muduo/Define.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jialeiwang/Desktop/Net/mini-muduo/Define.cpp > CMakeFiles/ranet.dir/mini-muduo/Define.cpp.i
+
+CMakeFiles/ranet.dir/mini-muduo/Define.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ranet.dir/mini-muduo/Define.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jialeiwang/Desktop/Net/mini-muduo/Define.cpp -o CMakeFiles/ranet.dir/mini-muduo/Define.cpp.s
 
 # Object files for target ranet
 ranet_OBJECTS = \
 "CMakeFiles/ranet.dir/main.cpp.o" \
-"CMakeFiles/ranet.dir/test/TcpServer.cpp.o" \
-"CMakeFiles/ranet.dir/test/Channel.cpp.o"
+"CMakeFiles/ranet.dir/mini-muduo/TcpServer.cpp.o" \
+"CMakeFiles/ranet.dir/mini-muduo/Channel.cpp.o" \
+"CMakeFiles/ranet.dir/mini-muduo/Acceptor.cpp.o" \
+"CMakeFiles/ranet.dir/mini-muduo/TcpConnection.cpp.o" \
+"CMakeFiles/ranet.dir/mini-muduo/Define.cpp.o"
 
 # External object files for target ranet
 ranet_EXTERNAL_OBJECTS =
 
 ranet: CMakeFiles/ranet.dir/main.cpp.o
-ranet: CMakeFiles/ranet.dir/test/TcpServer.cpp.o
-ranet: CMakeFiles/ranet.dir/test/Channel.cpp.o
+ranet: CMakeFiles/ranet.dir/mini-muduo/TcpServer.cpp.o
+ranet: CMakeFiles/ranet.dir/mini-muduo/Channel.cpp.o
+ranet: CMakeFiles/ranet.dir/mini-muduo/Acceptor.cpp.o
+ranet: CMakeFiles/ranet.dir/mini-muduo/TcpConnection.cpp.o
+ranet: CMakeFiles/ranet.dir/mini-muduo/Define.cpp.o
 ranet: CMakeFiles/ranet.dir/build.make
 ranet: CMakeFiles/ranet.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/jialeiwang/Desktop/Net/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable ranet"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/jialeiwang/Desktop/Net/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable ranet"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/ranet.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

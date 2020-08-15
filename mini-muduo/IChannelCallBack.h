@@ -4,6 +4,6 @@
 class IChannelCallBack
 {
 public:
-    void virtual OnIn(int sockfd){}
+    virtual void OnIn(int sockfd){}
 };
 #endif //RANET_ICHANNELCALLBACK_H

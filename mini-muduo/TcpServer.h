@@ -10,29 +10,26 @@
 #include <unistd.h>
 
 #include "IChannelCallBack.h"
-#include "Declare.h"
-#include "Define.h"
-
+#include "IAcceptorCallBack.h"
+#include "Channel.h"
+#include "TcpConnection.h"
+#include "Acceptor.h"
 #include <map>
 #include <vector>
 
-class TcpServer : public IChannelCallBack
+class TcpServer : public IAcceptorCallBack
 {
 public:
     TcpServer();
     ~TcpServer() = default;
     void start();
-    virtual void OnIn(int sockfd);
+    virtual void newConnection(int sockfd);
 private:
-    int createAndListen();
-    int setnonblocking(int);
-
     void update(Channel* pChannel, int op);
     int _epfd;
-    int _listenfd;
     struct epoll_event _events[MAX_EVENTS];
-    const int SERV_PORT = 9877;
-    std::map<int, Channel*> _channels;
+    std::map<int, TcpConnection*> _connections;
+    Acceptor *_pAcceptor;
 };
 
 #endif //RANET_TCPSERVER_H
