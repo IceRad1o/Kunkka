@@ -131,6 +131,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named minimuduo
+
+# Build rule for target.
+minimuduo: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 minimuduo
+.PHONY : minimuduo
+
+# fast build rule for target.
+minimuduo/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minimuduo.dir/build.make CMakeFiles/minimuduo.dir/build
+.PHONY : minimuduo/fast
+
+#=============================================================================
 # Target rules for targets named ranet
 
 # Build rule for target.
@@ -176,7 +189,7 @@ mini-muduo/Acceptor.o: mini-muduo/Acceptor.cpp.o
 
 # target to build an object file
 mini-muduo/Acceptor.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ranet.dir/build.make CMakeFiles/ranet.dir/mini-muduo/Acceptor.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minimuduo.dir/build.make CMakeFiles/minimuduo.dir/mini-muduo/Acceptor.cpp.o
 .PHONY : mini-muduo/Acceptor.cpp.o
 
 mini-muduo/Acceptor.i: mini-muduo/Acceptor.cpp.i
@@ -185,7 +198,7 @@ mini-muduo/Acceptor.i: mini-muduo/Acceptor.cpp.i
 
 # target to preprocess a source file
 mini-muduo/Acceptor.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ranet.dir/build.make CMakeFiles/ranet.dir/mini-muduo/Acceptor.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minimuduo.dir/build.make CMakeFiles/minimuduo.dir/mini-muduo/Acceptor.cpp.i
 .PHONY : mini-muduo/Acceptor.cpp.i
 
 mini-muduo/Acceptor.s: mini-muduo/Acceptor.cpp.s
@@ -194,7 +207,7 @@ mini-muduo/Acceptor.s: mini-muduo/Acceptor.cpp.s
 
 # target to generate assembly for a file
 mini-muduo/Acceptor.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ranet.dir/build.make CMakeFiles/ranet.dir/mini-muduo/Acceptor.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minimuduo.dir/build.make CMakeFiles/minimuduo.dir/mini-muduo/Acceptor.cpp.s
 .PHONY : mini-muduo/Acceptor.cpp.s
 
 mini-muduo/Channel.o: mini-muduo/Channel.cpp.o
@@ -203,7 +216,7 @@ mini-muduo/Channel.o: mini-muduo/Channel.cpp.o
 
 # target to build an object file
 mini-muduo/Channel.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ranet.dir/build.make CMakeFiles/ranet.dir/mini-muduo/Channel.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minimuduo.dir/build.make CMakeFiles/minimuduo.dir/mini-muduo/Channel.cpp.o
 .PHONY : mini-muduo/Channel.cpp.o
 
 mini-muduo/Channel.i: mini-muduo/Channel.cpp.i
@@ -212,7 +225,7 @@ mini-muduo/Channel.i: mini-muduo/Channel.cpp.i
 
 # target to preprocess a source file
 mini-muduo/Channel.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ranet.dir/build.make CMakeFiles/ranet.dir/mini-muduo/Channel.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minimuduo.dir/build.make CMakeFiles/minimuduo.dir/mini-muduo/Channel.cpp.i
 .PHONY : mini-muduo/Channel.cpp.i
 
 mini-muduo/Channel.s: mini-muduo/Channel.cpp.s
@@ -221,7 +234,7 @@ mini-muduo/Channel.s: mini-muduo/Channel.cpp.s
 
 # target to generate assembly for a file
 mini-muduo/Channel.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ranet.dir/build.make CMakeFiles/ranet.dir/mini-muduo/Channel.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minimuduo.dir/build.make CMakeFiles/minimuduo.dir/mini-muduo/Channel.cpp.s
 .PHONY : mini-muduo/Channel.cpp.s
 
 mini-muduo/Define.o: mini-muduo/Define.cpp.o
@@ -230,7 +243,7 @@ mini-muduo/Define.o: mini-muduo/Define.cpp.o
 
 # target to build an object file
 mini-muduo/Define.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ranet.dir/build.make CMakeFiles/ranet.dir/mini-muduo/Define.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minimuduo.dir/build.make CMakeFiles/minimuduo.dir/mini-muduo/Define.cpp.o
 .PHONY : mini-muduo/Define.cpp.o
 
 mini-muduo/Define.i: mini-muduo/Define.cpp.i
@@ -239,7 +252,7 @@ mini-muduo/Define.i: mini-muduo/Define.cpp.i
 
 # target to preprocess a source file
 mini-muduo/Define.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ranet.dir/build.make CMakeFiles/ranet.dir/mini-muduo/Define.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minimuduo.dir/build.make CMakeFiles/minimuduo.dir/mini-muduo/Define.cpp.i
 .PHONY : mini-muduo/Define.cpp.i
 
 mini-muduo/Define.s: mini-muduo/Define.cpp.s
@@ -248,8 +261,62 @@ mini-muduo/Define.s: mini-muduo/Define.cpp.s
 
 # target to generate assembly for a file
 mini-muduo/Define.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ranet.dir/build.make CMakeFiles/ranet.dir/mini-muduo/Define.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minimuduo.dir/build.make CMakeFiles/minimuduo.dir/mini-muduo/Define.cpp.s
 .PHONY : mini-muduo/Define.cpp.s
+
+mini-muduo/Epoll.o: mini-muduo/Epoll.cpp.o
+
+.PHONY : mini-muduo/Epoll.o
+
+# target to build an object file
+mini-muduo/Epoll.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minimuduo.dir/build.make CMakeFiles/minimuduo.dir/mini-muduo/Epoll.cpp.o
+.PHONY : mini-muduo/Epoll.cpp.o
+
+mini-muduo/Epoll.i: mini-muduo/Epoll.cpp.i
+
+.PHONY : mini-muduo/Epoll.i
+
+# target to preprocess a source file
+mini-muduo/Epoll.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minimuduo.dir/build.make CMakeFiles/minimuduo.dir/mini-muduo/Epoll.cpp.i
+.PHONY : mini-muduo/Epoll.cpp.i
+
+mini-muduo/Epoll.s: mini-muduo/Epoll.cpp.s
+
+.PHONY : mini-muduo/Epoll.s
+
+# target to generate assembly for a file
+mini-muduo/Epoll.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minimuduo.dir/build.make CMakeFiles/minimuduo.dir/mini-muduo/Epoll.cpp.s
+.PHONY : mini-muduo/Epoll.cpp.s
+
+mini-muduo/EventLoop.o: mini-muduo/EventLoop.cpp.o
+
+.PHONY : mini-muduo/EventLoop.o
+
+# target to build an object file
+mini-muduo/EventLoop.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minimuduo.dir/build.make CMakeFiles/minimuduo.dir/mini-muduo/EventLoop.cpp.o
+.PHONY : mini-muduo/EventLoop.cpp.o
+
+mini-muduo/EventLoop.i: mini-muduo/EventLoop.cpp.i
+
+.PHONY : mini-muduo/EventLoop.i
+
+# target to preprocess a source file
+mini-muduo/EventLoop.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minimuduo.dir/build.make CMakeFiles/minimuduo.dir/mini-muduo/EventLoop.cpp.i
+.PHONY : mini-muduo/EventLoop.cpp.i
+
+mini-muduo/EventLoop.s: mini-muduo/EventLoop.cpp.s
+
+.PHONY : mini-muduo/EventLoop.s
+
+# target to generate assembly for a file
+mini-muduo/EventLoop.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minimuduo.dir/build.make CMakeFiles/minimuduo.dir/mini-muduo/EventLoop.cpp.s
+.PHONY : mini-muduo/EventLoop.cpp.s
 
 mini-muduo/TcpConnection.o: mini-muduo/TcpConnection.cpp.o
 
@@ -257,7 +324,7 @@ mini-muduo/TcpConnection.o: mini-muduo/TcpConnection.cpp.o
 
 # target to build an object file
 mini-muduo/TcpConnection.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ranet.dir/build.make CMakeFiles/ranet.dir/mini-muduo/TcpConnection.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minimuduo.dir/build.make CMakeFiles/minimuduo.dir/mini-muduo/TcpConnection.cpp.o
 .PHONY : mini-muduo/TcpConnection.cpp.o
 
 mini-muduo/TcpConnection.i: mini-muduo/TcpConnection.cpp.i
@@ -266,7 +333,7 @@ mini-muduo/TcpConnection.i: mini-muduo/TcpConnection.cpp.i
 
 # target to preprocess a source file
 mini-muduo/TcpConnection.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ranet.dir/build.make CMakeFiles/ranet.dir/mini-muduo/TcpConnection.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minimuduo.dir/build.make CMakeFiles/minimuduo.dir/mini-muduo/TcpConnection.cpp.i
 .PHONY : mini-muduo/TcpConnection.cpp.i
 
 mini-muduo/TcpConnection.s: mini-muduo/TcpConnection.cpp.s
@@ -275,7 +342,7 @@ mini-muduo/TcpConnection.s: mini-muduo/TcpConnection.cpp.s
 
 # target to generate assembly for a file
 mini-muduo/TcpConnection.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ranet.dir/build.make CMakeFiles/ranet.dir/mini-muduo/TcpConnection.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minimuduo.dir/build.make CMakeFiles/minimuduo.dir/mini-muduo/TcpConnection.cpp.s
 .PHONY : mini-muduo/TcpConnection.cpp.s
 
 mini-muduo/TcpServer.o: mini-muduo/TcpServer.cpp.o
@@ -284,7 +351,7 @@ mini-muduo/TcpServer.o: mini-muduo/TcpServer.cpp.o
 
 # target to build an object file
 mini-muduo/TcpServer.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ranet.dir/build.make CMakeFiles/ranet.dir/mini-muduo/TcpServer.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minimuduo.dir/build.make CMakeFiles/minimuduo.dir/mini-muduo/TcpServer.cpp.o
 .PHONY : mini-muduo/TcpServer.cpp.o
 
 mini-muduo/TcpServer.i: mini-muduo/TcpServer.cpp.i
@@ -293,7 +360,7 @@ mini-muduo/TcpServer.i: mini-muduo/TcpServer.cpp.i
 
 # target to preprocess a source file
 mini-muduo/TcpServer.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ranet.dir/build.make CMakeFiles/ranet.dir/mini-muduo/TcpServer.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minimuduo.dir/build.make CMakeFiles/minimuduo.dir/mini-muduo/TcpServer.cpp.i
 .PHONY : mini-muduo/TcpServer.cpp.i
 
 mini-muduo/TcpServer.s: mini-muduo/TcpServer.cpp.s
@@ -302,8 +369,35 @@ mini-muduo/TcpServer.s: mini-muduo/TcpServer.cpp.s
 
 # target to generate assembly for a file
 mini-muduo/TcpServer.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ranet.dir/build.make CMakeFiles/ranet.dir/mini-muduo/TcpServer.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minimuduo.dir/build.make CMakeFiles/minimuduo.dir/mini-muduo/TcpServer.cpp.s
 .PHONY : mini-muduo/TcpServer.cpp.s
+
+mini-muduo/main.o: mini-muduo/main.cpp.o
+
+.PHONY : mini-muduo/main.o
+
+# target to build an object file
+mini-muduo/main.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minimuduo.dir/build.make CMakeFiles/minimuduo.dir/mini-muduo/main.cpp.o
+.PHONY : mini-muduo/main.cpp.o
+
+mini-muduo/main.i: mini-muduo/main.cpp.i
+
+.PHONY : mini-muduo/main.i
+
+# target to preprocess a source file
+mini-muduo/main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minimuduo.dir/build.make CMakeFiles/minimuduo.dir/mini-muduo/main.cpp.i
+.PHONY : mini-muduo/main.cpp.i
+
+mini-muduo/main.s: mini-muduo/main.cpp.s
+
+.PHONY : mini-muduo/main.s
+
+# target to generate assembly for a file
+mini-muduo/main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minimuduo.dir/build.make CMakeFiles/minimuduo.dir/mini-muduo/main.cpp.s
+.PHONY : mini-muduo/main.cpp.s
 
 # Help Target
 help:
@@ -313,6 +407,7 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... minimuduo"
 	@echo "... ranet"
 	@echo "... main.o"
 	@echo "... main.i"
@@ -326,12 +421,21 @@ help:
 	@echo "... mini-muduo/Define.o"
 	@echo "... mini-muduo/Define.i"
 	@echo "... mini-muduo/Define.s"
+	@echo "... mini-muduo/Epoll.o"
+	@echo "... mini-muduo/Epoll.i"
+	@echo "... mini-muduo/Epoll.s"
+	@echo "... mini-muduo/EventLoop.o"
+	@echo "... mini-muduo/EventLoop.i"
+	@echo "... mini-muduo/EventLoop.s"
 	@echo "... mini-muduo/TcpConnection.o"
 	@echo "... mini-muduo/TcpConnection.i"
 	@echo "... mini-muduo/TcpConnection.s"
 	@echo "... mini-muduo/TcpServer.o"
 	@echo "... mini-muduo/TcpServer.i"
 	@echo "... mini-muduo/TcpServer.s"
+	@echo "... mini-muduo/main.o"
+	@echo "... mini-muduo/main.i"
+	@echo "... mini-muduo/main.s"
 .PHONY : help
 
 

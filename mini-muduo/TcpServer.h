@@ -20,16 +20,15 @@
 class TcpServer : public IAcceptorCallBack
 {
 public:
-    TcpServer();
+    TcpServer(EventLoop *loop);
     ~TcpServer() = default;
     void start();
     virtual void newConnection(int sockfd);
 private:
-    void update(Channel* pChannel, int op);
-    int _epfd;
     struct epoll_event _events[MAX_EVENTS];
     std::map<int, TcpConnection*> _connections;
     Acceptor *_pAcceptor;
+    EventLoop *_loop;
 };
 
 #endif //RANET_TCPSERVER_H

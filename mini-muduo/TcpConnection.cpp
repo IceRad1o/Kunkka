@@ -1,10 +1,10 @@
 #include "TcpConnection.h"
 
-TcpConnection::TcpConnection(int epfd, int sockfd)
-    :_epfd(epfd)
-    ,_sockfd(sockfd)
+TcpConnection::TcpConnection(EventLoop *loop, int sockfd)
+    :_sockfd(sockfd)
+    ,_loop(loop)
 {
-    _pChannel = new Channel(_epfd, _sockfd);
+    _pChannel = new Channel(_loop, _sockfd);
     _pChannel->setCallBack(this);
     _pChannel->enableReading();
 }

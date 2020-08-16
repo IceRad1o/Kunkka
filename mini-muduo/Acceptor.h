@@ -17,7 +17,7 @@
 class Acceptor : public IChannelCallBack
 {
 public:
-    Acceptor(int epfd);
+    Acceptor(EventLoop *loop);
     ~Acceptor() = default;
 
     void virtual OnIn(int socket);
@@ -25,10 +25,10 @@ public:
     void start();
 private:
     int createAndListen();
-    int _epfd;
     int _listenfd;
     Channel *_pAcceptChannel;
     IAcceptorCallBack* _pCallBack;
+    EventLoop *_loop;
 };
 
 #endif //RANET_ACCEPTOR_H

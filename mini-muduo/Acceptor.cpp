@@ -1,7 +1,7 @@
 #include "Acceptor.h"
 
-Acceptor::Acceptor(int epfd)
-    :_epfd(epfd)
+Acceptor::Acceptor(EventLoop *loop)
+    :_loop(loop)
     ,_listenfd(-1)
     ,_pAcceptChannel(NULL)
     ,_pCallBack(NULL)
@@ -10,7 +10,7 @@ Acceptor::Acceptor(int epfd)
 void Acceptor::start()
 {
     _listenfd = createAndListen();
-    _pAcceptChannel = new Channel(_epfd, _listenfd);
+    _pAcceptChannel = new Channel(_loop, _listenfd);
     _pAcceptChannel->setCallBack(this);
     _pAcceptChannel->enableReading();
 }

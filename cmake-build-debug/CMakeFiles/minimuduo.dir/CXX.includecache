@@ -1,0 +1,44 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/jialeiwang/Desktop/Net/mini-muduo/Channel.h
+IChannelCallBack.h
+/home/jialeiwang/Desktop/Net/mini-muduo/IChannelCallBack.h
+EventLoop.h
+/home/jialeiwang/Desktop/Net/mini-muduo/EventLoop.h
+
+/home/jialeiwang/Desktop/Net/mini-muduo/Declare.h
+
+/home/jialeiwang/Desktop/Net/mini-muduo/Define.h
+fcntl.h
+-
+
+/home/jialeiwang/Desktop/Net/mini-muduo/Epoll.cpp
+Epoll.h
+/home/jialeiwang/Desktop/Net/mini-muduo/Epoll.h
+iostream
+-
+Channel.h
+/home/jialeiwang/Desktop/Net/mini-muduo/Channel.h
+
+/home/jialeiwang/Desktop/Net/mini-muduo/Epoll.h
+sys/epoll.h
+-
+vector
+-
+Declare.h
+/home/jialeiwang/Desktop/Net/mini-muduo/Declare.h
+Define.h
+/home/jialeiwang/Desktop/Net/mini-muduo/Define.h
+
+/home/jialeiwang/Desktop/Net/mini-muduo/EventLoop.h
+Declare.h
+/home/jialeiwang/Desktop/Net/mini-muduo/Declare.h
+
+/home/jialeiwang/Desktop/Net/mini-muduo/IChannelCallBack.h
+

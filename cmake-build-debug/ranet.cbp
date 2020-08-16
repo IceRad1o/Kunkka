@@ -37,6 +37,52 @@
 					<DistClean command="/usr/bin/make -f &quot;/home/jialeiwang/Desktop/Net/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
+			<Target title="minimuduo">
+				<Option output="/home/jialeiwang/Desktop/Net/cmake-build-debug/minimuduo" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/jialeiwang/Desktop/Net/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/jialeiwang/Desktop/Net/cmake-build-debug/Makefile&quot;  VERBOSE=1 minimuduo"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/jialeiwang/Desktop/Net/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/jialeiwang/Desktop/Net/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/jialeiwang/Desktop/Net/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="minimuduo/fast">
+				<Option output="/home/jialeiwang/Desktop/Net/cmake-build-debug/minimuduo" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/jialeiwang/Desktop/Net/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/jialeiwang/Desktop/Net/cmake-build-debug/Makefile&quot;  VERBOSE=1 minimuduo/fast"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/jialeiwang/Desktop/Net/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/jialeiwang/Desktop/Net/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/jialeiwang/Desktop/Net/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
 			<Target title="ranet">
 				<Option output="/home/jialeiwang/Desktop/Net/cmake-build-debug/ranet" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/home/jialeiwang/Desktop/Net/cmake-build-debug"/>
@@ -85,52 +131,67 @@
 			</Target>
 		</Build>
 		<Unit filename="/home/jialeiwang/Desktop/Net/base/noncopyable.h">
-			<Option target="ranet"/>
+			<Option target="minimuduo"/>
 		</Unit>
 		<Unit filename="/home/jialeiwang/Desktop/Net/main.cpp">
 			<Option target="ranet"/>
 		</Unit>
 		<Unit filename="/home/jialeiwang/Desktop/Net/mini-muduo/Acceptor.cpp">
-			<Option target="ranet"/>
+			<Option target="minimuduo"/>
 		</Unit>
 		<Unit filename="/home/jialeiwang/Desktop/Net/mini-muduo/Acceptor.h">
-			<Option target="ranet"/>
+			<Option target="minimuduo"/>
 		</Unit>
 		<Unit filename="/home/jialeiwang/Desktop/Net/mini-muduo/Channel.cpp">
-			<Option target="ranet"/>
+			<Option target="minimuduo"/>
 		</Unit>
 		<Unit filename="/home/jialeiwang/Desktop/Net/mini-muduo/Channel.h">
-			<Option target="ranet"/>
+			<Option target="minimuduo"/>
 		</Unit>
 		<Unit filename="/home/jialeiwang/Desktop/Net/mini-muduo/Declare.h">
-			<Option target="ranet"/>
+			<Option target="minimuduo"/>
 		</Unit>
 		<Unit filename="/home/jialeiwang/Desktop/Net/mini-muduo/Define.cpp">
-			<Option target="ranet"/>
+			<Option target="minimuduo"/>
 		</Unit>
 		<Unit filename="/home/jialeiwang/Desktop/Net/mini-muduo/Define.h">
-			<Option target="ranet"/>
+			<Option target="minimuduo"/>
+		</Unit>
+		<Unit filename="/home/jialeiwang/Desktop/Net/mini-muduo/Epoll.cpp">
+			<Option target="minimuduo"/>
+		</Unit>
+		<Unit filename="/home/jialeiwang/Desktop/Net/mini-muduo/Epoll.h">
+			<Option target="minimuduo"/>
+		</Unit>
+		<Unit filename="/home/jialeiwang/Desktop/Net/mini-muduo/EventLoop.cpp">
+			<Option target="minimuduo"/>
+		</Unit>
+		<Unit filename="/home/jialeiwang/Desktop/Net/mini-muduo/EventLoop.h">
+			<Option target="minimuduo"/>
 		</Unit>
 		<Unit filename="/home/jialeiwang/Desktop/Net/mini-muduo/IAcceptorCallBack.h">
-			<Option target="ranet"/>
+			<Option target="minimuduo"/>
 		</Unit>
 		<Unit filename="/home/jialeiwang/Desktop/Net/mini-muduo/IChannelCallBack.h">
-			<Option target="ranet"/>
+			<Option target="minimuduo"/>
 		</Unit>
 		<Unit filename="/home/jialeiwang/Desktop/Net/mini-muduo/TcpConnection.cpp">
-			<Option target="ranet"/>
+			<Option target="minimuduo"/>
 		</Unit>
 		<Unit filename="/home/jialeiwang/Desktop/Net/mini-muduo/TcpConnection.h">
-			<Option target="ranet"/>
+			<Option target="minimuduo"/>
 		</Unit>
 		<Unit filename="/home/jialeiwang/Desktop/Net/mini-muduo/TcpServer.cpp">
-			<Option target="ranet"/>
+			<Option target="minimuduo"/>
 		</Unit>
 		<Unit filename="/home/jialeiwang/Desktop/Net/mini-muduo/TcpServer.h">
-			<Option target="ranet"/>
+			<Option target="minimuduo"/>
+		</Unit>
+		<Unit filename="/home/jialeiwang/Desktop/Net/mini-muduo/main.cpp">
+			<Option target="minimuduo"/>
 		</Unit>
 		<Unit filename="/home/jialeiwang/Desktop/Net/net/Eventloop.h">
-			<Option target="ranet"/>
+			<Option target="minimuduo"/>
 		</Unit>
 		<Unit filename="/home/jialeiwang/Desktop/Net/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>

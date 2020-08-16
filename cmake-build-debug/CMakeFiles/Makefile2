@@ -73,6 +73,7 @@ CMAKE_BINARY_DIR = /home/jialeiwang/Desktop/Net/cmake-build-debug
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
+all: CMakeFiles/minimuduo.dir/all
 all: CMakeFiles/ranet.dir/all
 
 .PHONY : all
@@ -83,9 +84,37 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
+clean: CMakeFiles/minimuduo.dir/clean
 clean: CMakeFiles/ranet.dir/clean
 
 .PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/minimuduo.dir
+
+# All Build rule for target.
+CMakeFiles/minimuduo.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minimuduo.dir/build.make CMakeFiles/minimuduo.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minimuduo.dir/build.make CMakeFiles/minimuduo.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/jialeiwang/Desktop/Net/cmake-build-debug/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9 "Built target minimuduo"
+.PHONY : CMakeFiles/minimuduo.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/minimuduo.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/jialeiwang/Desktop/Net/cmake-build-debug/CMakeFiles 9
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/minimuduo.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/jialeiwang/Desktop/Net/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/minimuduo.dir/rule
+
+# Convenience name for target.
+minimuduo: CMakeFiles/minimuduo.dir/rule
+
+.PHONY : minimuduo
+
+# clean rule for target.
+CMakeFiles/minimuduo.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minimuduo.dir/build.make CMakeFiles/minimuduo.dir/clean
+.PHONY : CMakeFiles/minimuduo.dir/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/ranet.dir
@@ -94,12 +123,12 @@ clean: CMakeFiles/ranet.dir/clean
 CMakeFiles/ranet.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ranet.dir/build.make CMakeFiles/ranet.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ranet.dir/build.make CMakeFiles/ranet.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/jialeiwang/Desktop/Net/cmake-build-debug/CMakeFiles --progress-num=1,2,3,4,5,6,7 "Built target ranet"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/jialeiwang/Desktop/Net/cmake-build-debug/CMakeFiles --progress-num=10,11 "Built target ranet"
 .PHONY : CMakeFiles/ranet.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/ranet.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/jialeiwang/Desktop/Net/cmake-build-debug/CMakeFiles 7
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/jialeiwang/Desktop/Net/cmake-build-debug/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/ranet.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/jialeiwang/Desktop/Net/cmake-build-debug/CMakeFiles 0
 .PHONY : CMakeFiles/ranet.dir/rule
