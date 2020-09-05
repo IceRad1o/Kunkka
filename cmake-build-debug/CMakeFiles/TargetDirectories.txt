@@ -1,5 +1,0 @@
-/home/jialeiwang/Desktop/Net/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/home/jialeiwang/Desktop/Net/cmake-build-debug/CMakeFiles/ranet.dir
-/home/jialeiwang/Desktop/Net/cmake-build-debug/CMakeFiles/minimuduo.dir
-/home/jialeiwang/Desktop/Net/cmake-build-debug/CMakeFiles/tcpcli01.dir
-/home/jialeiwang/Desktop/Net/cmake-build-debug/CMakeFiles/edit_cache.dir

@@ -1,1 +1,0 @@
-/usr/bin/c++  -g   CMakeFiles/tcpcli01.dir/unp/tcpcli01.cpp.o CMakeFiles/tcpcli01.dir/unp/error.cpp.o CMakeFiles/tcpcli01.dir/unp/robustio.cpp.o CMakeFiles/tcpcli01.dir/unp/wrapsock.cpp.o CMakeFiles/tcpcli01.dir/unp/str_cli.cpp.o CMakeFiles/tcpcli01.dir/unp/strcliselect01.cpp.o  -o tcpcli01 

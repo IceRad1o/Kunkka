@@ -1,1 +1,0 @@
-/usr/bin/c++  -g   CMakeFiles/tcpservselect.dir/unp/tcpservselect01.cpp.o CMakeFiles/tcpservselect.dir/unp/error.cpp.o CMakeFiles/tcpservselect.dir/unp/robustio.cpp.o CMakeFiles/tcpservselect.dir/unp/wrapsock.cpp.o CMakeFiles/tcpservselect.dir/unp/wrapunix.cpp.o  -o tcpservselect 

@@ -1,1 +1,0 @@
-/usr/bin/c++  -g   CMakeFiles/tcpserv01.dir/unp/tcpserv01.cpp.o CMakeFiles/tcpserv01.dir/unp/error.cpp.o CMakeFiles/tcpserv01.dir/unp/robustio.cpp.o CMakeFiles/tcpserv01.dir/unp/wrapsock.cpp.o CMakeFiles/tcpserv01.dir/unp/str_echo.cpp.o  -o tcpserv01 

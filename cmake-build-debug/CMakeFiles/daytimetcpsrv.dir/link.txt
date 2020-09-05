@@ -1,1 +1,0 @@
-/usr/bin/c++  -g   CMakeFiles/daytimetcpsrv.dir/unp/daytimetcpsrv.cpp.o CMakeFiles/daytimetcpsrv.dir/unp/error.cpp.o  -o daytimetcpsrv 
