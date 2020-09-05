@@ -46,7 +46,7 @@ void TcpConnection::OnIn(int sockfd)
         std::cout << "read 0 closed socket fd" << std::endl;
         close(sockfd);
     } else {
-        std::string buf(line, MAXLINE);
+        std::string buf(line, readlen); // char* to string, care the length
         _pUser->onMessage(this, buf);
     }
 }

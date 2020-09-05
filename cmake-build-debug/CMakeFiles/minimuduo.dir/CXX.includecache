@@ -6,6 +6,10 @@
 
 #IncludeRegexTransform: 
 
+/home/jialeiwang/Desktop/Net/mini-muduo/Acceptor.cpp
+Acceptor.h
+/home/jialeiwang/Desktop/Net/mini-muduo/Acceptor.h
+
 /home/jialeiwang/Desktop/Net/mini-muduo/Acceptor.h
 Define.h
 /home/jialeiwang/Desktop/Net/mini-muduo/Define.h
@@ -32,6 +36,16 @@ cstdlib
 arpa/inet.h
 -
 
+/home/jialeiwang/Desktop/Net/mini-muduo/Channel.cpp
+iostream
+-
+sys/epoll.h
+-
+Channel.h
+/home/jialeiwang/Desktop/Net/mini-muduo/Channel.h
+IChannelCallBack.h
+/home/jialeiwang/Desktop/Net/mini-muduo/IChannelCallBack.h
+
 /home/jialeiwang/Desktop/Net/mini-muduo/Channel.h
 IChannelCallBack.h
 /home/jialeiwang/Desktop/Net/mini-muduo/IChannelCallBack.h
@@ -44,11 +58,43 @@ EventLoop.h
 fcntl.h
 -
 
+/home/jialeiwang/Desktop/Net/mini-muduo/EchoServer.cpp
+EchoServer.h
+/home/jialeiwang/Desktop/Net/mini-muduo/EchoServer.h
+
 /home/jialeiwang/Desktop/Net/mini-muduo/EchoServer.h
 IMuduoUser.h
 /home/jialeiwang/Desktop/Net/mini-muduo/IMuduoUser.h
 TcpServer.h
 /home/jialeiwang/Desktop/Net/mini-muduo/TcpServer.h
+
+/home/jialeiwang/Desktop/Net/mini-muduo/Epoll.cpp
+Epoll.h
+/home/jialeiwang/Desktop/Net/mini-muduo/Epoll.h
+iostream
+-
+Channel.h
+/home/jialeiwang/Desktop/Net/mini-muduo/Channel.h
+
+/home/jialeiwang/Desktop/Net/mini-muduo/Epoll.h
+sys/epoll.h
+-
+vector
+-
+Declare.h
+/home/jialeiwang/Desktop/Net/mini-muduo/Declare.h
+Define.h
+/home/jialeiwang/Desktop/Net/mini-muduo/Define.h
+
+/home/jialeiwang/Desktop/Net/mini-muduo/EventLoop.cpp
+EventLoop.h
+/home/jialeiwang/Desktop/Net/mini-muduo/EventLoop.h
+vector
+-
+Epoll.h
+/home/jialeiwang/Desktop/Net/mini-muduo/Epoll.h
+Channel.h
+/home/jialeiwang/Desktop/Net/mini-muduo/Channel.h
 
 /home/jialeiwang/Desktop/Net/mini-muduo/EventLoop.h
 Declare.h
@@ -63,6 +109,14 @@ string
 -
 Declare.h
 /home/jialeiwang/Desktop/Net/mini-muduo/Declare.h
+
+/home/jialeiwang/Desktop/Net/mini-muduo/TcpConnection.cpp
+iostream
+-
+string
+-
+TcpConnection.h
+/home/jialeiwang/Desktop/Net/mini-muduo/TcpConnection.h
 
 /home/jialeiwang/Desktop/Net/mini-muduo/TcpConnection.h
 Define.h
@@ -79,6 +133,8 @@ Channel.h
 /home/jialeiwang/Desktop/Net/mini-muduo/Channel.h
 EventLoop.h
 /home/jialeiwang/Desktop/Net/mini-muduo/EventLoop.h
+IMuduoUser.h
+/home/jialeiwang/Desktop/Net/mini-muduo/IMuduoUser.h
 
 /home/jialeiwang/Desktop/Net/mini-muduo/TcpServer.cpp
 TcpServer.h

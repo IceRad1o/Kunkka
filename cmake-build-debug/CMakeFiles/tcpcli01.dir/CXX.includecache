@@ -6,10 +6,6 @@
 
 #IncludeRegexTransform: 
 
-/home/jialeiwang/Desktop/Net/unp/strcliselect01.cpp
-unp.h
-/home/jialeiwang/Desktop/Net/unp/unp.h
-
 /home/jialeiwang/Desktop/Net/unp/tcpcli01.cpp
 unp.h
 /home/jialeiwang/Desktop/Net/unp/unp.h
