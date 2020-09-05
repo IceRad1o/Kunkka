@@ -20,6 +20,8 @@ CMakeFiles/minimuduo.dir/mini-muduo/Channel.cpp.o: ../mini-muduo/IChannelCallBac
 CMakeFiles/minimuduo.dir/mini-muduo/Define.cpp.o: ../mini-muduo/Define.cpp
 CMakeFiles/minimuduo.dir/mini-muduo/Define.cpp.o: ../mini-muduo/Define.h
 
+CMakeFiles/minimuduo.dir/mini-muduo/EchoServer.cpp.o: ../mini-muduo/EchoServer.cpp
+
 CMakeFiles/minimuduo.dir/mini-muduo/Epoll.cpp.o: ../mini-muduo/Channel.h
 CMakeFiles/minimuduo.dir/mini-muduo/Epoll.cpp.o: ../mini-muduo/Declare.h
 CMakeFiles/minimuduo.dir/mini-muduo/Epoll.cpp.o: ../mini-muduo/Define.h
@@ -51,6 +53,7 @@ CMakeFiles/minimuduo.dir/mini-muduo/TcpServer.cpp.o: ../mini-muduo/Define.h
 CMakeFiles/minimuduo.dir/mini-muduo/TcpServer.cpp.o: ../mini-muduo/EventLoop.h
 CMakeFiles/minimuduo.dir/mini-muduo/TcpServer.cpp.o: ../mini-muduo/IAcceptorCallBack.h
 CMakeFiles/minimuduo.dir/mini-muduo/TcpServer.cpp.o: ../mini-muduo/IChannelCallBack.h
+CMakeFiles/minimuduo.dir/mini-muduo/TcpServer.cpp.o: ../mini-muduo/IMuduoUser.h
 CMakeFiles/minimuduo.dir/mini-muduo/TcpServer.cpp.o: ../mini-muduo/TcpConnection.h
 CMakeFiles/minimuduo.dir/mini-muduo/TcpServer.cpp.o: ../mini-muduo/TcpServer.cpp
 CMakeFiles/minimuduo.dir/mini-muduo/TcpServer.cpp.o: ../mini-muduo/TcpServer.h
@@ -59,9 +62,11 @@ CMakeFiles/minimuduo.dir/mini-muduo/main.cpp.o: ../mini-muduo/Acceptor.h
 CMakeFiles/minimuduo.dir/mini-muduo/main.cpp.o: ../mini-muduo/Channel.h
 CMakeFiles/minimuduo.dir/mini-muduo/main.cpp.o: ../mini-muduo/Declare.h
 CMakeFiles/minimuduo.dir/mini-muduo/main.cpp.o: ../mini-muduo/Define.h
+CMakeFiles/minimuduo.dir/mini-muduo/main.cpp.o: ../mini-muduo/EchoServer.h
 CMakeFiles/minimuduo.dir/mini-muduo/main.cpp.o: ../mini-muduo/EventLoop.h
 CMakeFiles/minimuduo.dir/mini-muduo/main.cpp.o: ../mini-muduo/IAcceptorCallBack.h
 CMakeFiles/minimuduo.dir/mini-muduo/main.cpp.o: ../mini-muduo/IChannelCallBack.h
+CMakeFiles/minimuduo.dir/mini-muduo/main.cpp.o: ../mini-muduo/IMuduoUser.h
 CMakeFiles/minimuduo.dir/mini-muduo/main.cpp.o: ../mini-muduo/TcpConnection.h
 CMakeFiles/minimuduo.dir/mini-muduo/main.cpp.o: ../mini-muduo/TcpServer.h
 CMakeFiles/minimuduo.dir/mini-muduo/main.cpp.o: ../mini-muduo/main.cpp

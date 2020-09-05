@@ -131,6 +131,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named ranet
+
+# Build rule for target.
+ranet: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ranet
+.PHONY : ranet
+
+# fast build rule for target.
+ranet/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ranet.dir/build.make CMakeFiles/ranet.dir/build
+.PHONY : ranet/fast
+
+#=============================================================================
 # Target rules for targets named minimuduo
 
 # Build rule for target.
@@ -144,17 +157,17 @@ minimuduo/fast:
 .PHONY : minimuduo/fast
 
 #=============================================================================
-# Target rules for targets named ranet
+# Target rules for targets named tcpcli01
 
 # Build rule for target.
-ranet: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ranet
-.PHONY : ranet
+tcpcli01: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tcpcli01
+.PHONY : tcpcli01
 
 # fast build rule for target.
-ranet/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ranet.dir/build.make CMakeFiles/ranet.dir/build
-.PHONY : ranet/fast
+tcpcli01/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tcpcli01.dir/build.make CMakeFiles/tcpcli01.dir/build
+.PHONY : tcpcli01/fast
 
 main.o: main.cpp.o
 
@@ -263,6 +276,33 @@ mini-muduo/Define.s: mini-muduo/Define.cpp.s
 mini-muduo/Define.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/minimuduo.dir/build.make CMakeFiles/minimuduo.dir/mini-muduo/Define.cpp.s
 .PHONY : mini-muduo/Define.cpp.s
+
+mini-muduo/EchoServer.o: mini-muduo/EchoServer.cpp.o
+
+.PHONY : mini-muduo/EchoServer.o
+
+# target to build an object file
+mini-muduo/EchoServer.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minimuduo.dir/build.make CMakeFiles/minimuduo.dir/mini-muduo/EchoServer.cpp.o
+.PHONY : mini-muduo/EchoServer.cpp.o
+
+mini-muduo/EchoServer.i: mini-muduo/EchoServer.cpp.i
+
+.PHONY : mini-muduo/EchoServer.i
+
+# target to preprocess a source file
+mini-muduo/EchoServer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minimuduo.dir/build.make CMakeFiles/minimuduo.dir/mini-muduo/EchoServer.cpp.i
+.PHONY : mini-muduo/EchoServer.cpp.i
+
+mini-muduo/EchoServer.s: mini-muduo/EchoServer.cpp.s
+
+.PHONY : mini-muduo/EchoServer.s
+
+# target to generate assembly for a file
+mini-muduo/EchoServer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minimuduo.dir/build.make CMakeFiles/minimuduo.dir/mini-muduo/EchoServer.cpp.s
+.PHONY : mini-muduo/EchoServer.cpp.s
 
 mini-muduo/Epoll.o: mini-muduo/Epoll.cpp.o
 
@@ -399,6 +439,168 @@ mini-muduo/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/minimuduo.dir/build.make CMakeFiles/minimuduo.dir/mini-muduo/main.cpp.s
 .PHONY : mini-muduo/main.cpp.s
 
+unp/error.o: unp/error.cpp.o
+
+.PHONY : unp/error.o
+
+# target to build an object file
+unp/error.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tcpcli01.dir/build.make CMakeFiles/tcpcli01.dir/unp/error.cpp.o
+.PHONY : unp/error.cpp.o
+
+unp/error.i: unp/error.cpp.i
+
+.PHONY : unp/error.i
+
+# target to preprocess a source file
+unp/error.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tcpcli01.dir/build.make CMakeFiles/tcpcli01.dir/unp/error.cpp.i
+.PHONY : unp/error.cpp.i
+
+unp/error.s: unp/error.cpp.s
+
+.PHONY : unp/error.s
+
+# target to generate assembly for a file
+unp/error.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tcpcli01.dir/build.make CMakeFiles/tcpcli01.dir/unp/error.cpp.s
+.PHONY : unp/error.cpp.s
+
+unp/robustio.o: unp/robustio.cpp.o
+
+.PHONY : unp/robustio.o
+
+# target to build an object file
+unp/robustio.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tcpcli01.dir/build.make CMakeFiles/tcpcli01.dir/unp/robustio.cpp.o
+.PHONY : unp/robustio.cpp.o
+
+unp/robustio.i: unp/robustio.cpp.i
+
+.PHONY : unp/robustio.i
+
+# target to preprocess a source file
+unp/robustio.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tcpcli01.dir/build.make CMakeFiles/tcpcli01.dir/unp/robustio.cpp.i
+.PHONY : unp/robustio.cpp.i
+
+unp/robustio.s: unp/robustio.cpp.s
+
+.PHONY : unp/robustio.s
+
+# target to generate assembly for a file
+unp/robustio.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tcpcli01.dir/build.make CMakeFiles/tcpcli01.dir/unp/robustio.cpp.s
+.PHONY : unp/robustio.cpp.s
+
+unp/str_cli.o: unp/str_cli.cpp.o
+
+.PHONY : unp/str_cli.o
+
+# target to build an object file
+unp/str_cli.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tcpcli01.dir/build.make CMakeFiles/tcpcli01.dir/unp/str_cli.cpp.o
+.PHONY : unp/str_cli.cpp.o
+
+unp/str_cli.i: unp/str_cli.cpp.i
+
+.PHONY : unp/str_cli.i
+
+# target to preprocess a source file
+unp/str_cli.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tcpcli01.dir/build.make CMakeFiles/tcpcli01.dir/unp/str_cli.cpp.i
+.PHONY : unp/str_cli.cpp.i
+
+unp/str_cli.s: unp/str_cli.cpp.s
+
+.PHONY : unp/str_cli.s
+
+# target to generate assembly for a file
+unp/str_cli.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tcpcli01.dir/build.make CMakeFiles/tcpcli01.dir/unp/str_cli.cpp.s
+.PHONY : unp/str_cli.cpp.s
+
+unp/strcliselect01.o: unp/strcliselect01.cpp.o
+
+.PHONY : unp/strcliselect01.o
+
+# target to build an object file
+unp/strcliselect01.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tcpcli01.dir/build.make CMakeFiles/tcpcli01.dir/unp/strcliselect01.cpp.o
+.PHONY : unp/strcliselect01.cpp.o
+
+unp/strcliselect01.i: unp/strcliselect01.cpp.i
+
+.PHONY : unp/strcliselect01.i
+
+# target to preprocess a source file
+unp/strcliselect01.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tcpcli01.dir/build.make CMakeFiles/tcpcli01.dir/unp/strcliselect01.cpp.i
+.PHONY : unp/strcliselect01.cpp.i
+
+unp/strcliselect01.s: unp/strcliselect01.cpp.s
+
+.PHONY : unp/strcliselect01.s
+
+# target to generate assembly for a file
+unp/strcliselect01.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tcpcli01.dir/build.make CMakeFiles/tcpcli01.dir/unp/strcliselect01.cpp.s
+.PHONY : unp/strcliselect01.cpp.s
+
+unp/tcpcli01.o: unp/tcpcli01.cpp.o
+
+.PHONY : unp/tcpcli01.o
+
+# target to build an object file
+unp/tcpcli01.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tcpcli01.dir/build.make CMakeFiles/tcpcli01.dir/unp/tcpcli01.cpp.o
+.PHONY : unp/tcpcli01.cpp.o
+
+unp/tcpcli01.i: unp/tcpcli01.cpp.i
+
+.PHONY : unp/tcpcli01.i
+
+# target to preprocess a source file
+unp/tcpcli01.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tcpcli01.dir/build.make CMakeFiles/tcpcli01.dir/unp/tcpcli01.cpp.i
+.PHONY : unp/tcpcli01.cpp.i
+
+unp/tcpcli01.s: unp/tcpcli01.cpp.s
+
+.PHONY : unp/tcpcli01.s
+
+# target to generate assembly for a file
+unp/tcpcli01.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tcpcli01.dir/build.make CMakeFiles/tcpcli01.dir/unp/tcpcli01.cpp.s
+.PHONY : unp/tcpcli01.cpp.s
+
+unp/wrapsock.o: unp/wrapsock.cpp.o
+
+.PHONY : unp/wrapsock.o
+
+# target to build an object file
+unp/wrapsock.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tcpcli01.dir/build.make CMakeFiles/tcpcli01.dir/unp/wrapsock.cpp.o
+.PHONY : unp/wrapsock.cpp.o
+
+unp/wrapsock.i: unp/wrapsock.cpp.i
+
+.PHONY : unp/wrapsock.i
+
+# target to preprocess a source file
+unp/wrapsock.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tcpcli01.dir/build.make CMakeFiles/tcpcli01.dir/unp/wrapsock.cpp.i
+.PHONY : unp/wrapsock.cpp.i
+
+unp/wrapsock.s: unp/wrapsock.cpp.s
+
+.PHONY : unp/wrapsock.s
+
+# target to generate assembly for a file
+unp/wrapsock.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tcpcli01.dir/build.make CMakeFiles/tcpcli01.dir/unp/wrapsock.cpp.s
+.PHONY : unp/wrapsock.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -409,6 +611,7 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... minimuduo"
 	@echo "... ranet"
+	@echo "... tcpcli01"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
@@ -421,6 +624,9 @@ help:
 	@echo "... mini-muduo/Define.o"
 	@echo "... mini-muduo/Define.i"
 	@echo "... mini-muduo/Define.s"
+	@echo "... mini-muduo/EchoServer.o"
+	@echo "... mini-muduo/EchoServer.i"
+	@echo "... mini-muduo/EchoServer.s"
 	@echo "... mini-muduo/Epoll.o"
 	@echo "... mini-muduo/Epoll.i"
 	@echo "... mini-muduo/Epoll.s"
@@ -436,6 +642,24 @@ help:
 	@echo "... mini-muduo/main.o"
 	@echo "... mini-muduo/main.i"
 	@echo "... mini-muduo/main.s"
+	@echo "... unp/error.o"
+	@echo "... unp/error.i"
+	@echo "... unp/error.s"
+	@echo "... unp/robustio.o"
+	@echo "... unp/robustio.i"
+	@echo "... unp/robustio.s"
+	@echo "... unp/str_cli.o"
+	@echo "... unp/str_cli.i"
+	@echo "... unp/str_cli.s"
+	@echo "... unp/strcliselect01.o"
+	@echo "... unp/strcliselect01.i"
+	@echo "... unp/strcliselect01.s"
+	@echo "... unp/tcpcli01.o"
+	@echo "... unp/tcpcli01.i"
+	@echo "... unp/tcpcli01.s"
+	@echo "... unp/wrapsock.o"
+	@echo "... unp/wrapsock.i"
+	@echo "... unp/wrapsock.s"
 .PHONY : help
 
 

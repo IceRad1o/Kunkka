@@ -6,22 +6,6 @@
 
 #IncludeRegexTransform: 
 
-/home/jialeiwang/Desktop/Net/unp/error.cpp
-unp.h
-/home/jialeiwang/Desktop/Net/unp/unp.h
-stdarg.h
--
-syslog.h
--
-
-/home/jialeiwang/Desktop/Net/unp/robustio.cpp
-unp.h
-/home/jialeiwang/Desktop/Net/unp/unp.h
-
-/home/jialeiwang/Desktop/Net/unp/str_cli.cpp
-unp.h
-/home/jialeiwang/Desktop/Net/unp/unp.h
-
 /home/jialeiwang/Desktop/Net/unp/strcliselect01.cpp
 unp.h
 /home/jialeiwang/Desktop/Net/unp/unp.h
@@ -57,8 +41,4 @@ sys/wait.h
 -
 unistd.h
 -
-
-/home/jialeiwang/Desktop/Net/unp/wrapsock.cpp
-unp.h
-/home/jialeiwang/Desktop/Net/unp/unp.h
 

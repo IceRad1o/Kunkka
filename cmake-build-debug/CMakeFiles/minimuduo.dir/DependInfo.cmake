@@ -7,6 +7,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/jialeiwang/Desktop/Net/mini-muduo/Acceptor.cpp" "/home/jialeiwang/Desktop/Net/cmake-build-debug/CMakeFiles/minimuduo.dir/mini-muduo/Acceptor.cpp.o"
   "/home/jialeiwang/Desktop/Net/mini-muduo/Channel.cpp" "/home/jialeiwang/Desktop/Net/cmake-build-debug/CMakeFiles/minimuduo.dir/mini-muduo/Channel.cpp.o"
   "/home/jialeiwang/Desktop/Net/mini-muduo/Define.cpp" "/home/jialeiwang/Desktop/Net/cmake-build-debug/CMakeFiles/minimuduo.dir/mini-muduo/Define.cpp.o"
+  "/home/jialeiwang/Desktop/Net/mini-muduo/EchoServer.cpp" "/home/jialeiwang/Desktop/Net/cmake-build-debug/CMakeFiles/minimuduo.dir/mini-muduo/EchoServer.cpp.o"
   "/home/jialeiwang/Desktop/Net/mini-muduo/Epoll.cpp" "/home/jialeiwang/Desktop/Net/cmake-build-debug/CMakeFiles/minimuduo.dir/mini-muduo/Epoll.cpp.o"
   "/home/jialeiwang/Desktop/Net/mini-muduo/EventLoop.cpp" "/home/jialeiwang/Desktop/Net/cmake-build-debug/CMakeFiles/minimuduo.dir/mini-muduo/EventLoop.cpp.o"
   "/home/jialeiwang/Desktop/Net/mini-muduo/TcpConnection.cpp" "/home/jialeiwang/Desktop/Net/cmake-build-debug/CMakeFiles/minimuduo.dir/mini-muduo/TcpConnection.cpp.o"

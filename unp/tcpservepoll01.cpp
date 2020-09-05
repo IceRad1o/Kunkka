@@ -2,7 +2,7 @@
 #include <sys/epoll.h>
 #include "unp.h"
 
-/* Version01 just a echo server example using epoll, can mini-muduo with tcpcli01 echo */
+/* Version01 just a echo server example using epoll */
 
 int setnonblocking(int fd)
 {

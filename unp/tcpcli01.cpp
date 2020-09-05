@@ -16,7 +16,7 @@ int main(int argc, char **argv)
     inet_pton(AF_INET, argv[1], &servaddr.sin_addr);
 
     Connect(sockfd, (SA*)&servaddr, sizeof(servaddr));
-    str_cli_select01(stdin, sockfd);
-
+    //str_cli_select01(stdin, sockfd);
+    str_cli(stdin, sockfd);
     exit(0);
 }

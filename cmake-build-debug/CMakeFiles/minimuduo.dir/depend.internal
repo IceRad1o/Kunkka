@@ -20,6 +20,8 @@ CMakeFiles/minimuduo.dir/mini-muduo/Channel.cpp.o
 CMakeFiles/minimuduo.dir/mini-muduo/Define.cpp.o
  /home/jialeiwang/Desktop/Net/mini-muduo/Define.cpp
  /home/jialeiwang/Desktop/Net/mini-muduo/Define.h
+CMakeFiles/minimuduo.dir/mini-muduo/EchoServer.cpp.o
+ /home/jialeiwang/Desktop/Net/mini-muduo/EchoServer.cpp
 CMakeFiles/minimuduo.dir/mini-muduo/Epoll.cpp.o
  /home/jialeiwang/Desktop/Net/mini-muduo/Channel.h
  /home/jialeiwang/Desktop/Net/mini-muduo/Declare.h
@@ -52,6 +54,7 @@ CMakeFiles/minimuduo.dir/mini-muduo/TcpServer.cpp.o
  /home/jialeiwang/Desktop/Net/mini-muduo/EventLoop.h
  /home/jialeiwang/Desktop/Net/mini-muduo/IAcceptorCallBack.h
  /home/jialeiwang/Desktop/Net/mini-muduo/IChannelCallBack.h
+ /home/jialeiwang/Desktop/Net/mini-muduo/IMuduoUser.h
  /home/jialeiwang/Desktop/Net/mini-muduo/TcpConnection.h
  /home/jialeiwang/Desktop/Net/mini-muduo/TcpServer.cpp
  /home/jialeiwang/Desktop/Net/mini-muduo/TcpServer.h
@@ -60,9 +63,11 @@ CMakeFiles/minimuduo.dir/mini-muduo/main.cpp.o
  /home/jialeiwang/Desktop/Net/mini-muduo/Channel.h
  /home/jialeiwang/Desktop/Net/mini-muduo/Declare.h
  /home/jialeiwang/Desktop/Net/mini-muduo/Define.h
+ /home/jialeiwang/Desktop/Net/mini-muduo/EchoServer.h
  /home/jialeiwang/Desktop/Net/mini-muduo/EventLoop.h
  /home/jialeiwang/Desktop/Net/mini-muduo/IAcceptorCallBack.h
  /home/jialeiwang/Desktop/Net/mini-muduo/IChannelCallBack.h
+ /home/jialeiwang/Desktop/Net/mini-muduo/IMuduoUser.h
  /home/jialeiwang/Desktop/Net/mini-muduo/TcpConnection.h
  /home/jialeiwang/Desktop/Net/mini-muduo/TcpServer.h
  /home/jialeiwang/Desktop/Net/mini-muduo/main.cpp

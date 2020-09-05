@@ -13,9 +13,10 @@
 #include "IAcceptorCallBack.h"
 #include "Channel.h"
 #include "TcpConnection.h"
-#include "Acceptor.h"
 #include <map>
 #include <vector>
+#include "Acceptor.h"
+#include "IMuduoUser.h"
 
 class TcpServer : public IAcceptorCallBack
 {
@@ -23,12 +24,14 @@ public:
     TcpServer(EventLoop *loop);
     ~TcpServer() = default;
     void start();
+    void setCallback(IMuduoUser* pUser);
     virtual void newConnection(int sockfd);
 private:
     struct epoll_event _events[MAX_EVENTS];
     std::map<int, TcpConnection*> _connections;
     Acceptor *_pAcceptor;
     EventLoop *_loop;
+    IMuduoUser *_pUser;
 };
 
 #endif //RANET_TCPSERVER_H

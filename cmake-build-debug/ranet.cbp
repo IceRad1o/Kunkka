@@ -27,11 +27,47 @@
 					<DistClean command="/usr/bin/make -f &quot;/home/jialeiwang/Desktop/Net/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="edit_cache">
+			<Target title="ranet">
+				<Option output="/home/jialeiwang/Desktop/Net/cmake-build-debug/ranet" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/home/jialeiwang/Desktop/Net/cmake-build-debug"/>
-				<Option type="4"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -f &quot;/home/jialeiwang/Desktop/Net/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<Build command="/usr/bin/make -f &quot;/home/jialeiwang/Desktop/Net/cmake-build-debug/Makefile&quot;  VERBOSE=1 ranet"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/jialeiwang/Desktop/Net/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/jialeiwang/Desktop/Net/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/jialeiwang/Desktop/Net/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="ranet/fast">
+				<Option output="/home/jialeiwang/Desktop/Net/cmake-build-debug/ranet" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/jialeiwang/Desktop/Net/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/jialeiwang/Desktop/Net/cmake-build-debug/Makefile&quot;  VERBOSE=1 ranet/fast"/>
 					<CompileFile command="/usr/bin/make -f &quot;/home/jialeiwang/Desktop/Net/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -f &quot;/home/jialeiwang/Desktop/Net/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -f &quot;/home/jialeiwang/Desktop/Net/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
@@ -83,8 +119,8 @@
 					<DistClean command="/usr/bin/make -f &quot;/home/jialeiwang/Desktop/Net/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="ranet">
-				<Option output="/home/jialeiwang/Desktop/Net/cmake-build-debug/ranet" prefix_auto="0" extension_auto="0"/>
+			<Target title="tcpcli01">
+				<Option output="/home/jialeiwang/Desktop/Net/cmake-build-debug/tcpcli01" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/home/jialeiwang/Desktop/Net/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
@@ -100,14 +136,14 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -f &quot;/home/jialeiwang/Desktop/Net/cmake-build-debug/Makefile&quot;  VERBOSE=1 ranet"/>
+					<Build command="/usr/bin/make -f &quot;/home/jialeiwang/Desktop/Net/cmake-build-debug/Makefile&quot;  VERBOSE=1 tcpcli01"/>
 					<CompileFile command="/usr/bin/make -f &quot;/home/jialeiwang/Desktop/Net/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -f &quot;/home/jialeiwang/Desktop/Net/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -f &quot;/home/jialeiwang/Desktop/Net/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="ranet/fast">
-				<Option output="/home/jialeiwang/Desktop/Net/cmake-build-debug/ranet" prefix_auto="0" extension_auto="0"/>
+			<Target title="tcpcli01/fast">
+				<Option output="/home/jialeiwang/Desktop/Net/cmake-build-debug/tcpcli01" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/home/jialeiwang/Desktop/Net/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
@@ -123,7 +159,17 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -f &quot;/home/jialeiwang/Desktop/Net/cmake-build-debug/Makefile&quot;  VERBOSE=1 ranet/fast"/>
+					<Build command="/usr/bin/make -f &quot;/home/jialeiwang/Desktop/Net/cmake-build-debug/Makefile&quot;  VERBOSE=1 tcpcli01/fast"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/jialeiwang/Desktop/Net/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/jialeiwang/Desktop/Net/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/jialeiwang/Desktop/Net/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/home/jialeiwang/Desktop/Net/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/jialeiwang/Desktop/Net/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
 					<CompileFile command="/usr/bin/make -f &quot;/home/jialeiwang/Desktop/Net/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -f &quot;/home/jialeiwang/Desktop/Net/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -f &quot;/home/jialeiwang/Desktop/Net/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
@@ -157,6 +203,12 @@
 		<Unit filename="/home/jialeiwang/Desktop/Net/mini-muduo/Define.h">
 			<Option target="minimuduo"/>
 		</Unit>
+		<Unit filename="/home/jialeiwang/Desktop/Net/mini-muduo/EchoServer.cpp">
+			<Option target="minimuduo"/>
+		</Unit>
+		<Unit filename="/home/jialeiwang/Desktop/Net/mini-muduo/EchoServer.h">
+			<Option target="minimuduo"/>
+		</Unit>
 		<Unit filename="/home/jialeiwang/Desktop/Net/mini-muduo/Epoll.cpp">
 			<Option target="minimuduo"/>
 		</Unit>
@@ -173,6 +225,9 @@
 			<Option target="minimuduo"/>
 		</Unit>
 		<Unit filename="/home/jialeiwang/Desktop/Net/mini-muduo/IChannelCallBack.h">
+			<Option target="minimuduo"/>
+		</Unit>
+		<Unit filename="/home/jialeiwang/Desktop/Net/mini-muduo/IMuduoUser.h">
 			<Option target="minimuduo"/>
 		</Unit>
 		<Unit filename="/home/jialeiwang/Desktop/Net/mini-muduo/TcpConnection.cpp">
@@ -192,6 +247,24 @@
 		</Unit>
 		<Unit filename="/home/jialeiwang/Desktop/Net/net/Eventloop.h">
 			<Option target="minimuduo"/>
+		</Unit>
+		<Unit filename="/home/jialeiwang/Desktop/Net/unp/error.cpp">
+			<Option target="tcpcli01"/>
+		</Unit>
+		<Unit filename="/home/jialeiwang/Desktop/Net/unp/robustio.cpp">
+			<Option target="tcpcli01"/>
+		</Unit>
+		<Unit filename="/home/jialeiwang/Desktop/Net/unp/str_cli.cpp">
+			<Option target="tcpcli01"/>
+		</Unit>
+		<Unit filename="/home/jialeiwang/Desktop/Net/unp/strcliselect01.cpp">
+			<Option target="tcpcli01"/>
+		</Unit>
+		<Unit filename="/home/jialeiwang/Desktop/Net/unp/tcpcli01.cpp">
+			<Option target="tcpcli01"/>
+		</Unit>
+		<Unit filename="/home/jialeiwang/Desktop/Net/unp/wrapsock.cpp">
+			<Option target="tcpcli01"/>
 		</Unit>
 		<Unit filename="/home/jialeiwang/Desktop/Net/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>

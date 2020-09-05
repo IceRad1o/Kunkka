@@ -1,12 +1,31 @@
+#include <iostream>
+#include <string>
 #include "TcpConnection.h"
 
 TcpConnection::TcpConnection(EventLoop *loop, int sockfd)
     :_sockfd(sockfd)
     ,_loop(loop)
+    ,_pUser(NULL)
 {
     _pChannel = new Channel(_loop, _sockfd);
     _pChannel->setCallBack(this);
     _pChannel->enableReading();
+}
+
+void TcpConnection::send(const std::string &message) {
+    int n = ::write(_sockfd, message.c_str(), message.size());
+    if( n!= static_cast<int>(message.size())){
+        std::cout<<" write error!" << message.size()-n<<"bytes left"<<std::endl;
+    }
+}
+
+void TcpConnection::connectedEstablished() {
+    if(_pUser)
+        _pUser->onConnection(this);
+}
+
+void TcpConnection::setUser(IMuduoUser *pUser) {
+    _pUser = pUser;
 }
 
 void TcpConnection::OnIn(int sockfd)
@@ -27,7 +46,7 @@ void TcpConnection::OnIn(int sockfd)
         std::cout << "read 0 closed socket fd" << std::endl;
         close(sockfd);
     } else {
-        if (write(sockfd, line, readlen) != readlen)
-            std::cout << "write doesn't finish at one time" << std::endl;
+        std::string buf(line, MAXLINE);
+        _pUser->onMessage(this, buf);
     }
 }
