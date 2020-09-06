@@ -10,5 +10,7 @@ class TcpConnection;
 
 class Epoll;
 class EventLoop;
+class Buffer;
+class IMuduoUser;
 
 #endif //RANET_DECLARE_H

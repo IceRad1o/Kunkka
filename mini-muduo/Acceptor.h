@@ -20,7 +20,8 @@ public:
     Acceptor(EventLoop *loop);
     ~Acceptor() = default;
 
-    void virtual OnIn(int socket);
+    virtual void handleRead();
+    virtual void handleWrite();
     void setCallBack(IAcceptorCallBack* pCallBack);
     void start();
 private:

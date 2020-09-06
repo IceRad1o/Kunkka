@@ -10,8 +10,9 @@ public:
     EchoServer(EventLoop *pLoop);
     ~EchoServer() = default;
     void start();
-    virtual void onConnection(TcpConnection *pCon);
-    virtual void onMessage(TcpConnection *pCon, const std::string& data);
+    void onConnection(TcpConnection *pCon) override;
+    void onMessage(TcpConnection *pCon, Buffer *pBuf) override;
+    void onWriteComplete(TcpConnection *pCon) override;
 private:
     EventLoop *_pLoop;
     TcpServer _pServer;

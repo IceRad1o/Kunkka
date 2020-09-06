@@ -4,7 +4,7 @@ project(ranet)
 set(CMAKE_CXX_STANDARD 14)
 
 add_executable(ranet main.cpp)
-add_executable(minimuduo mini-muduo/main.cpp mini-muduo/TcpServer.cpp mini-muduo/TcpServer.h net/Eventloop.h base/noncopyable.h mini-muduo/Channel.h mini-muduo/Channel.cpp mini-muduo/IChannelCallBack.h mini-muduo/Declare.h mini-muduo/Define.h mini-muduo/Acceptor.cpp mini-muduo/Acceptor.h mini-muduo/IAcceptorCallBack.h mini-muduo/TcpConnection.cpp mini-muduo/TcpConnection.h mini-muduo/Define.cpp mini-muduo/EventLoop.cpp mini-muduo/EventLoop.h mini-muduo/Epoll.cpp mini-muduo/Epoll.h mini-muduo/main.cpp mini-muduo/IMuduoUser.h mini-muduo/EchoServer.cpp mini-muduo/EchoServer.h)
+add_executable(minimuduo mini-muduo/main.cpp mini-muduo/TcpServer.cpp mini-muduo/TcpServer.h net/Eventloop.h base/noncopyable.h mini-muduo/Channel.h mini-muduo/Channel.cpp mini-muduo/IChannelCallBack.h mini-muduo/Declare.h mini-muduo/Define.h mini-muduo/Acceptor.cpp mini-muduo/Acceptor.h mini-muduo/IAcceptorCallBack.h mini-muduo/TcpConnection.cpp mini-muduo/TcpConnection.h mini-muduo/Define.cpp mini-muduo/EventLoop.cpp mini-muduo/EventLoop.h mini-muduo/Epoll.cpp mini-muduo/Epoll.h mini-muduo/main.cpp mini-muduo/IMuduoUser.h mini-muduo/EchoServer.cpp mini-muduo/EchoServer.h mini-muduo/Buffer.cpp mini-muduo/Buffer.h mini-muduo/IRun.h)
 
 #add_executable(daytimetcpcli unp/daytimetcpcli.cpp unp/error.cpp net/Eventloop.cpp)
 #add_executable(daytimetcpsrv unp/daytimetcpsrv.cpp unp/error.cpp)

@@ -8,24 +8,28 @@
 #include "Channel.h"
 #include "EventLoop.h"
 #include "IMuduoUser.h"
+#include "Buffer.h"
 
-class TcpConnection : public IChannelCallBack
+class TcpConnection : public IChannelCallBack, public IRun
 {
 public:
     TcpConnection(EventLoop *loop, int sockfd);
     ~TcpConnection() = default;
-    virtual void OnIn(int sockfd);
 
     void send(const std::string& message);
     void connectedEstablished();
     void setUser(IMuduoUser *pUser);
     void setCallback(IAcceptorCallBack *pCallback);
-
+    void handleRead() override;
+    void handleWrite() override;
+    void run() override;
 private:
     int _sockfd;
     Channel *_pChannel;
     EventLoop *_loop;
     IMuduoUser *_pUser;
+    Buffer _inBuf;
+    Buffer _outBuf;
 };
 
 

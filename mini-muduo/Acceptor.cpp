@@ -41,7 +41,7 @@ void Acceptor::setCallBack(IAcceptorCallBack *pCallBack)
     _pCallBack = pCallBack;
 }
 
-void Acceptor::OnIn(int socket)
+void Acceptor::handleRead()
 {
     int connfd;
     struct sockaddr_in cliaddr;
@@ -57,4 +57,8 @@ void Acceptor::OnIn(int socket)
     setnonblocking(connfd);
 
     _pCallBack->newConnection(connfd);
+}
+
+void Acceptor::handleWrite() {
+
 }

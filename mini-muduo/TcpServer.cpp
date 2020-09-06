@@ -1,4 +1,5 @@
 #include "TcpServer.h"
+#include "Acceptor.h"
 
 TcpServer::TcpServer(EventLoop *loop):_loop(loop),_pAcceptor(NULL),_pUser(NULL)
 {}

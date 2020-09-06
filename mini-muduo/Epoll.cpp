@@ -6,6 +6,9 @@
 #include <iostream>
 #include "Channel.h"
 
+const int kNew = -1;
+const int kAdded = 1;
+
 Epoll::Epoll()
 {
     _epfd = ::epoll_create(1);
@@ -31,9 +34,20 @@ void Epoll::poll(std::vector<Channel *> *pChannels)
 
 void Epoll::update(Channel *channel)
 {
-    struct epoll_event ev;
-    ev.data.ptr = channel;
-    ev.events = channel->getEvents();
-    int fd = channel->getSockfd();
-    ::epoll_ctl(_epfd, EPOLL_CTL_ADD, fd, &ev);
+    int index = channel->getIndex();
+    if(index == kNew){
+        struct epoll_event ev;
+        ev.data.ptr = channel;
+        ev.events = channel->getEvents();
+        int fd = channel->getSockfd();
+        channel->setIndex(kAdded);
+        ::epoll_ctl(_epfd, EPOLL_CTL_ADD, fd, &ev);
+    }
+    else{
+        struct epoll_event ev;
+        ev.data.ptr = channel;
+        ev.events = channel->getEvents();
+        int fd = channel->getSockfd();
+        ::epoll_ctl(_epfd, EPOLL_CTL_MOD, fd, &ev);
+    }
 }
