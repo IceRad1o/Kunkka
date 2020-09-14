@@ -5,6 +5,8 @@
 #include <vector>
 #include "Epoll.h"
 #include "Channel.h"
+#include "Timestamp.h"
+#include "TimerQueue.h"
 
 EventLoop::EventLoop()
     :_quit(false)
@@ -27,6 +29,7 @@ void EventLoop::loop()
         {
             (*it)->handleEvent();
         }
+        doPendingFunctors();
     }
 }
 
@@ -35,8 +38,9 @@ void EventLoop::update(Channel *channel)
     _poller->update(channel);
 }
 
-void EventLoop::queueLoop(IRun *pRun) {
-    _pendingFunctors.push_back(pRun);
+void EventLoop::queueLoop(IRun *pRun, void* param) {
+    Runner r(pRun, param);
+    _pendingFunctors.push_back(r);
     wakeup();
 }
 
@@ -68,9 +72,25 @@ int EventLoop::createEventfd() {
 }
 
 void EventLoop::doPendingFunctors() {
-    std::vector<IRun*> tempRuns;
+    std::vector<Runner> tempRuns;
     tempRuns.swap(_pendingFunctors); // avoid deadlock
     for(auto it=tempRuns.begin();it != tempRuns.end(); ++it){
-        (*it)->run();
+        (*it).doRun();
     }
+}
+
+long EventLoop::runAt(Timestamp when, IRun *pRun) {
+    return (long)(_pTimerQueue->addTimer(pRun, when, 0.0));
+}
+
+long EventLoop::runAfter(double delay, IRun *pRun) {
+    return (long)_pTimerQueue->addTimer(pRun, Timestamp::nowAfter(delay), 0.0);
+}
+
+long EventLoop::runEvery(double interval, IRun *pRun) {
+    return (long)_pTimerQueue->addTimer(pRun, Timestamp::nowAfter(interval), interval);
+}
+
+void EventLoop::cancelTimer(int timerId) {
+    _pTimerQueue->cancelTimer(timerId);
 }

@@ -2,7 +2,7 @@
 
 const int MESSAGE_LENGTH=8;
 EchoServer::EchoServer(EventLoop *pLoop)
-    :_pLoop(pLoop),_pServer(pLoop)
+    :_pLoop(pLoop),_pServer(pLoop),_timer(-1),_index(0)
 
 {
     _pServer.setCallback(this);
@@ -27,9 +27,19 @@ void EchoServer::onMessage(TcpConnection *pCon, Buffer *pBuf)
     }
      */
     std::string message = pBuf->retrieveAsString(pBuf->readableBytes());
-    pCon->send(message + "\n");
+    pCon->send(message);
+
+    // _timer = _pLoop->runEvery(0.5,this);
 }
 
 void EchoServer::onWriteComplete(TcpConnection *pCon) {
     std::cout<< "onWriteComplete\n";
+}
+
+void EchoServer::run(void *param) {
+    std::cout<< "index: "<< _index <<std::endl;
+    if(_index++ == 3){
+        _pLoop->cancelTimer(_timer);
+        _index = 0;
+    }
 }

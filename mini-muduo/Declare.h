@@ -13,4 +13,9 @@ class EventLoop;
 class Buffer;
 class IMuduoUser;
 
+class TimerQueue;
+class Timestamp;
+class IRun;
+class Timer;
+
 #endif //RANET_DECLARE_H

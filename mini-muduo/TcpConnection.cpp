@@ -20,7 +20,7 @@ void TcpConnection::send(const std::string &message) {
             std::cout<< "write error";
         }
         if(n == message.size()){
-            _loop->queueLoop(this); //invoke onWriteComplete
+            _loop->queueLoop(this, NULL); //invoke onWriteComplete
         }
     }
     if( n < static_cast<int>(message.size())){
@@ -75,13 +75,13 @@ void TcpConnection::handleWrite() {
             _outBuf.retrive(n);
             if(_outBuf.readableBytes() == 0) {
                 _pChannel->disableWriting();  //remove EPOLLOUT
-                _loop->queueLoop(this);  // notify
+                _loop->queueLoop(this, NULL);  // notify
             }
         }
     }
 }
 
-void TcpConnection::run() {
+void TcpConnection::run(void* param) {
     _pUser->onWriteComplete(this);
 }
 

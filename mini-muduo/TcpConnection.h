@@ -22,7 +22,7 @@ public:
     void setCallback(IAcceptorCallBack *pCallback);
     void handleRead() override;
     void handleWrite() override;
-    void run() override;
+    void run(void* param) override;
 private:
     int _sockfd;
     Channel *_pChannel;
