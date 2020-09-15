@@ -7,15 +7,19 @@
 #include "Channel.h"
 #include "Timestamp.h"
 #include "TimerQueue.h"
+#include "CurrentThread.h"
 
 EventLoop::EventLoop()
     :_quit(false)
     ,_poller(new Epoll()) // memory leak;
+    ,_callingPendingFunctors(false)
+    ,_threadId(CurrentThread::tid())
+    ,_pTimerQueue(new TimerQueue(this))
 {
     _eventfd = createEventfd();
-    _wakeupChannel = new Channel(this, _eventfd);
-    _wakeupChannel->setCallBack(this);
-    _wakeupChannel->enableReading();
+    _pEventfdChannel = new Channel(this, _eventfd);
+    _pEventfdChannel->setCallBack(this);
+    _pEventfdChannel->enableReading();
 }
 
 void EventLoop::loop()
@@ -38,10 +42,23 @@ void EventLoop::update(Channel *channel)
     _poller->update(channel);
 }
 
-void EventLoop::queueLoop(IRun *pRun, void* param) {
-    Runner r(pRun, param);
-    _pendingFunctors.push_back(r);
-    wakeup();
+void EventLoop::queueLoop(Task& task) {
+    {
+        MutexLockGuard guard(_mutex);
+        _pendingFunctors.push_back(task);
+    }
+    if(!isInLoopThread() || _callingPendingFunctors){ //?
+        wakeup();
+    }
+}
+
+void EventLoop::runInLoop(Task &task) {
+    if(isInLoopThread()){
+        task.doTask();
+    }
+    else{
+        queueLoop(task);
+    }
 }
 
 void EventLoop::handleRead() {
@@ -72,25 +89,34 @@ int EventLoop::createEventfd() {
 }
 
 void EventLoop::doPendingFunctors() {
-    std::vector<Runner> tempRuns;
-    tempRuns.swap(_pendingFunctors); // avoid deadlock
-    for(auto it=tempRuns.begin();it != tempRuns.end(); ++it){
-        (*it).doRun();
+    std::vector<Task> tempRuns;
+    _callingPendingFunctors = true;
+    {
+        MutexLockGuard guard(_mutex);
+        tempRuns.swap(_pendingFunctors);
+    }
+    for(auto it = tempRuns.begin(); it!=tempRuns.end();it++)
+    {
+        it->doTask();
     }
 }
 
-long EventLoop::runAt(Timestamp when, IRun *pRun) {
-    return (long)(_pTimerQueue->addTimer(pRun, when, 0.0));
+int EventLoop::runAt(Timestamp when, IRun0 *pRun) {
+    return _pTimerQueue->addTimer(pRun, when, 0.0);
 }
 
-long EventLoop::runAfter(double delay, IRun *pRun) {
-    return (long)_pTimerQueue->addTimer(pRun, Timestamp::nowAfter(delay), 0.0);
+int EventLoop::runAfter(double delay, IRun0 *pRun) {
+    return _pTimerQueue->addTimer(pRun, Timestamp::nowAfter(delay), 0.0);
 }
 
-long EventLoop::runEvery(double interval, IRun *pRun) {
-    return (long)_pTimerQueue->addTimer(pRun, Timestamp::nowAfter(interval), interval);
+int EventLoop::runEvery(double interval, IRun0 *pRun) {
+    return _pTimerQueue->addTimer(pRun, Timestamp::nowAfter(interval), interval);
 }
 
 void EventLoop::cancelTimer(int timerId) {
     _pTimerQueue->cancelTimer(timerId);
+}
+
+bool EventLoop::isInLoopThread() {
+    return _threadId == CurrentThread::tid();
 }

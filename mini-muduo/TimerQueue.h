@@ -10,10 +10,10 @@
 #include "IRun.h"
 #include "Timer.h"
 
-class TimerQueue : public IChannelCallBack
+class TimerQueue : public IChannelCallBack, public IRun2
 {
 public:
-
+    /*
     class AddTimerWrapper : public IRun
     {
     public:
@@ -39,13 +39,15 @@ public:
     private:
         TimerQueue* _pQueue;
     };
-
+    */
     TimerQueue(EventLoop* pLoop);
     ~TimerQueue();
-    void doAddTimer(void* param);
-    void doCancelTimer(void* param);
-    long addTimer(IRun* pRun, Timestamp when, double interval);
+    void doAddTimer(Timer *timer);
+    void doCancelTimer(Timer *timer);
+    long addTimer(IRun0* pRun, Timestamp when, double interval);
     void cancelTimer(long timerId);
+
+    virtual void run2(const std::string& str, void* param);
     virtual void handleRead();
     virtual void handleWrite();
 
@@ -61,12 +63,10 @@ private:
     bool insert(Timer* pItem);
     struct timespec howMuchTimeFromNow(Timestamp when);
 
-    long _timerfd;
+    int _timerfd;
     TimerList _timers;
     EventLoop* _pLoop;
     Channel* _timerfdChannel;
-    AddTimerWrapper* _addTimerWrapper;
-    CancelTimerWrapper* _cancelTimerWrapper;
 };
 
 #endif //RANET_TIMERQUEUE_H

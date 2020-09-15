@@ -15,7 +15,11 @@ class IMuduoUser;
 
 class TimerQueue;
 class Timestamp;
-class IRun;
 class Timer;
 
+class Thread;
+class ThreadPool;
+class IRun0;
+class IRun2;
+class Task;
 #endif //RANET_DECLARE_H

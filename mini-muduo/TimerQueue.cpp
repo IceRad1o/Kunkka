@@ -11,15 +11,14 @@
 #include "Channel.h"
 #include "EventLoop.h"
 #include "Timestamp.h"
+#include "Task.h"
 
 #include <iostream>
 
 TimerQueue::TimerQueue(EventLoop *pLoop)
         :_timerfd(createTimerfd())
         ,_pLoop(pLoop)
-        ,_timerfdChannel(new Channel(_pLoop, _timerfd)) // Memory Leak !!!
-        ,_addTimerWrapper(new AddTimerWrapper(this)) // Memory Leak !!!
-        ,_cancelTimerWrapper(new CancelTimerWrapper(this)) // Memory Leak !!!
+        ,_timerfdChannel(new Channel(_pLoop, _timerfd)) // Memory Leak !!
 {
     _timerfdChannel->setCallBack(this);
     _timerfdChannel->enableReading();
@@ -30,9 +29,18 @@ TimerQueue::~TimerQueue()
     ::close(_timerfd);
 }
 
-void TimerQueue::doAddTimer(void* param)
+void TimerQueue::run2(const std::string &str, void *timer) {
+    if(str == "addtimer"){
+        doAddTimer((Timer*)timer);
+    }
+    else if(str == "canceltimer"){
+        doCancelTimer((Timer*)timer);
+    }
+    else{}
+}
+
+void TimerQueue::doAddTimer(Timer* pTimer)
 {
-    Timer* pTimer = static_cast<Timer*>(param);
     bool earliestChanged = insert(pTimer);
     if(earliestChanged)
     {
@@ -40,9 +48,8 @@ void TimerQueue::doAddTimer(void* param)
     }
 }
 
-void TimerQueue::doCancelTimer(void* param)
+void TimerQueue::doCancelTimer(Timer* pTimer)
 {
-    Timer* pTimer = static_cast<Timer*>(param);
     Entry e(pTimer->getId(), pTimer);
     TimerList::iterator it;
     for(it = _timers.begin(); it != _timers.end(); ++it)
@@ -55,16 +62,21 @@ void TimerQueue::doCancelTimer(void* param)
     }
 }
 
-long TimerQueue::addTimer(IRun* pRun, Timestamp when, double interval)
+long TimerQueue::addTimer(IRun0* pRun, Timestamp when, double interval)
 {
     Timer* pTimer = new Timer(when, pRun, interval); //Memory Leak !!!
-    _pLoop->queueLoop(_addTimerWrapper, pTimer);
+    std::string str("addTimer");
+    Task task(this,str,pTimer);
+    _pLoop->queueLoop(task);
     return (long)pTimer;
 }
 
 void TimerQueue::cancelTimer(long timerId)
 {
-    _pLoop->queueLoop(_cancelTimerWrapper, (void*)timerId);
+    Timer* pCancel = (Timer*)(timerId);
+    std::string str("canceltimer");
+    Task task(this, str, pCancel);
+    _pLoop->queueLoop(task);
 }
 
 void TimerQueue::handleRead()
@@ -76,7 +88,7 @@ void TimerQueue::handleRead()
     std::vector<Entry>::iterator it;
     for(it = expired.begin(); it != expired.end(); ++it)
     {
-        it->second->run();
+        it->second->timeout();
     }
     reset(expired, now);
 }

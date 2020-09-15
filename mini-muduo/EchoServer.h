@@ -1,11 +1,12 @@
 #ifndef RANET_ECHOSERVER_H
 #define RANET_ECHOSERVER_H
 
-#include "Timer.h"
 #include "IMuduoUser.h"
 #include "TcpServer.h"
+#include "IRun.h"
+#include "ThreadPool.h"
 
-class EchoServer: public IMuduoUser, public IRun
+class EchoServer: public IMuduoUser, public IRun2
 {
 public:
     EchoServer(EventLoop *pLoop);
@@ -15,13 +16,14 @@ public:
     void onMessage(TcpConnection *pCon, Buffer *pBuf) override;
     void onWriteComplete(TcpConnection *pCon) override;
 
-    void run(void* param) override;
+    virtual void run2(const std::string& message, void* tcp);
 private:
+    int fib(int n);
     EventLoop *_pLoop;
     TcpServer _pServer;
-    //long _timer;
-    long _timer;
+    int _timer;
     int _index;
+    ThreadPool _threadpool;
 };
 
 #endif //RANET_ECHOSERVER_H

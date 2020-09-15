@@ -1,7 +1,7 @@
 #include <iostream>
 #include <string>
 #include "TcpConnection.h"
-
+#include "Task.h"
 TcpConnection::TcpConnection(EventLoop *loop, int sockfd)
     :_sockfd(sockfd)
     ,_loop(loop)
@@ -13,6 +13,18 @@ TcpConnection::TcpConnection(EventLoop *loop, int sockfd)
 }
 
 void TcpConnection::send(const std::string &message) {
+    std::cout<<"isinLoopThread: "<<_loop->isInLoopThread()<<std::endl;
+    std::cout<<"message to be sent: "<<message<<std::endl;
+    if(_loop->isInLoopThread()){
+        sendInLoop(message);
+    }
+    else{
+        Task task(this, message, this);
+        _loop->runInLoop(task);
+    }
+}
+
+void TcpConnection::sendInLoop(const std::string &message) {
     int n = 0;
     if(_outBuf.readableBytes() ==0) {
         n = ::write(_sockfd, message.c_str(), message.size());
@@ -20,7 +32,8 @@ void TcpConnection::send(const std::string &message) {
             std::cout<< "write error";
         }
         if(n == message.size()){
-            _loop->queueLoop(this, NULL); //invoke onWriteComplete
+            Task task(this);
+            _loop->queueLoop(task); //invoke onWriteComplete
         }
     }
     if( n < static_cast<int>(message.size())){
@@ -32,14 +45,6 @@ void TcpConnection::send(const std::string &message) {
     }
 }
 
-void TcpConnection::connectedEstablished() {
-    if(_pUser)
-        _pUser->onConnection(this);
-}
-
-void TcpConnection::setUser(IMuduoUser *pUser) {
-    _pUser = pUser;
-}
 
 void TcpConnection::handleRead() {
     int sockfd = _pChannel->getSockfd();
@@ -75,14 +80,28 @@ void TcpConnection::handleWrite() {
             _outBuf.retrive(n);
             if(_outBuf.readableBytes() == 0) {
                 _pChannel->disableWriting();  //remove EPOLLOUT
-                _loop->queueLoop(this, NULL);  // notify
+                Task task(this);
+                _loop->queueLoop(task);  // notify
             }
         }
     }
 }
 
-void TcpConnection::run(void* param) {
+void TcpConnection::connectedEstablished() {
+    if(_pUser)
+        _pUser->onConnection(this);
+}
+
+void TcpConnection::setUser(IMuduoUser *pUser) {
+    _pUser = pUser;
+}
+
+void TcpConnection::run0() {
     _pUser->onWriteComplete(this);
+}
+
+void TcpConnection::run2(const std::string &message, void *param) {
+    sendInLoop(message);
 }
 
 
