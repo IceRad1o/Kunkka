@@ -12,20 +12,13 @@
 
 多线程的Reactor，一个主IO
 
-![multi-thread-Reactor](.\assets\multi-thread-Reactor.PNG)
+![multi-thread-Reactor](./assets/multi-thread-Reactor.PNG)
 
-### 教程1
 
-https://github.com/voidccc/mini-muduo 
 
-参考这个教程可以写一个初步的muduo(通过切换不同的tag从0开始)，作者的blog有更详细的每个version做了什么改进。
 
-缺点在于是32位系统下编译的，有一些bug和内存泄露的情况，在Timer version添加前都能正常使用，线程的模块也能正常使用。
-
-我自己的学习顺序。
 
 1. write a simple epoll server	
-
 2. Add TcpServer / Channel. Channel是对fd的封装
 3. Add Acceptor/ TcpConnection
 4. Add EventLoop 
@@ -33,6 +26,7 @@ https://github.com/voidccc/mini-muduo
 6. Add Buffer and WriteComplete
 7. Add Timer (单线程的Reactor成型)
 8. Add multi-thread related code (单IO线程 + theadpool工作线程)
+9. One loop per thread
 
 大概的架构
 
